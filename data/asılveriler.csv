@@ -1,0 +1,2922 @@
+metin
+"Oliver James Cooke    
+09000916 
+1"
+"Oliver James Cooke  09000916 
+2 
+ Preface Preface Preface Preface     
+ I have always loved the Silent Hill series; it is q uite easily one of the main contributors 
+towards my extended admiration for developers. I fi rst played the game when I was fourteen 
+and continuously come back to the franchise year af ter year. The reason I chose to write about 
+this game is not only because Silent Hill 2 is my f avourite game of all time, but an academic 
+reason to invest time in researching the game, far beyond my previous research. A lot of the 
+content of this document is of course prior knowled ge of the game, but a good proportion of 
+information has been discovered through this projec t, allowing me to understand its 
+development with increasing complexity. Two of the main compelling objects of the 
+development I have allowed to bleed into this docum ent, both of which were created before 
+the original design document was realised. The firs t is the script, which I have thankfully not 
+printed out as it would be far from the direction o f the assignment. The second is the main 
+theme for Silent Hill 2, composed again before the original design document was conceived. I 
+have in this case provided that track on a CD; if o nly to authenticate some part of the original 
+document through this reverse engineering. The orig inal design document has not been 
+published online, and I can only imagine that if it  was, I would need a translator to decipher the 
+Japanese text. 
+ I hope you enjoy this document. 
+   Oliver Cooke"
+"Oliver James Cooke  09000916 
+3 
+ Contents  
+Game Concept  
+  Introduction 
+ Background 
+ Description 
+ Key Features 
+ Genre 
+ Platform 
+ Concept Art 
+ 
+Game Mechanics 
+ 
+Core Game Play 
+Game Flow 
+Characters 
+Monsters 
+Game Play Elements 
+Weapon Properties 
+Game Physics and Statistics  
+Artificial Intelligence 
+Player Controls 
+ 
+Interface 
+ 
+Flowcharts 
+Functional Requirements 
+Mock Up Screens  
+ P4 
+ 
+P4 
+P4 
+P4 
+P5 
+P5 
+P6 
+P6 
+ 
+P11  
+ 
+P11 
+P12 
+P13 
+P15 
+P20 
+P24 
+P25 
+P25 
+P26 
+ 
+P27  
+ 
+P27 
+P30 
+P32 Art and Video  
+ 
+Overall Goals 
+2D Art 
+3D Art & Animation 
+Cinematics 
+ 
+Sound and Music 
+ 
+Overall Goals 
+Sound Effects & Music 
+ 
+Story 
+ 
+Story Overview 
+Multiple Endings 
+ 
+Level Overview 
+ 
+Location Overviews 
+Puzzles 
+ 
+Market Analysis 
+ 
+Target Market 
+Top Performers 
+Feature Comparison 
+ 
+Bibliography 
+ 
+ 
+ P33  
+ 
+P33 
+P34 
+P34 
+P34 
+ 
+P35  
+ 
+P35 
+P35 
+ 
+P36  
+ 
+P36 
+P40 
+ 
+P42  
+ 
+P42 
+P52 
+ 
+P58  
+ 
+P58 
+P58 
+P59 
+ 
+P60  
+Oliver James Cooke  09000916 
+4 
+ Game Concept  
+Introduction  
+ 
+ Silent Hill 2 is a 3 rd  person experience for the Playstation 2 console. T he protagonist is 
+James Sunderland who is drawn to Silent Hill after receiving a letter from his dead wife Mary, 
+asking him to meet her there. 
+ 
+Background  
+ 
+ Silent Hill 2 will be a continuation of the franch ise, a similar feel to the first game, with 
+entirely new technical methods of implementation. A lthough the game will use a brand new 
+custom engine, many core concepts from the Playstat ion predecessor will transposed into the 
+new engine code. The reason behind this is the prev ious success of the Silent Hill engine, which 
+allowed us to create an atmosphere truly unique for  the franchise.  
+ Many of the previous team (Team Silent) will be wo rking on this project with the 
+exception of previous director Keiichiro Toyama . 
+ 
+Description  
+ 
+ Silent Hill 2 like the first game, places the play er at the floor of the town with lots of 
+questions and no answers. It is the players job to unravel the mystery of what happened to 
+attract the protagonist to the town, be that killin g lots of monsters, or avoiding as many fights 
+as possible. The few things they cannot avoid are p uzzles and the horrifying truth the game has 
+to offer about the circumstances of your avatars ar rival. 
+  
+ 
+ 
+ 
+ 
+ 
+Oliver James Cooke  09000916 
+5 
+ Key Features  
+  
+ Silent Hill:  
+Silent Hill 2 will allow players to explore more of  the original games location, 
+revealing new and disturbing areas. 
+ 
+ Compelling New Story:  
+  Silent Hill 2 will feature a brand new story set in the Silent Hill universe, with 
+brand new characters, puzzles and monsters. 
+  
+ Graphics:  
+  With all new graphics and real to life CG movies,  Silent Hill 2 will really immerse 
+players into the game, creating natural characters and breath taking environments. The game 
+will really push for high cinematic quality in both  game play and cut scenes. 
+ 
+ Dynamic Camera Angles:  
+  Silent Hill 2 will use periodically fixed camera angles to intensify the game play, 
+similar to the first game. This adds to the cinemat ic approach the game will take. 
+ 
+ Sound:  
+  The game will contain a completely new soundtrack  composed by Akira Yamaoka 
+who created the soundtrack for the first game. The game will also use S-Force technology to 
+create a more immersive sound. 
+ Difficulty:  
+  The difficulty for Silent Hill 2 will be set in 2  categories. Riddle level and Enemy 
+level. You can set the level respectively for each individually, using a 3 tier method. 
+ 
+Genre  
+ 
+ Silent Hill 2 like its predecessor falls neatly so mewhere between survival horror and 
+psychological horror, though unlike the previous ga me, the psychological horror in Silent Hill 2 
+will be more apparent. This is due to the story hav ing a more direct approach, and a more 
+explicit subject matter. 
+ 
+ 
+ 
+Oliver James Cooke  09000916 
+6 
+ Platform  
+ The targeted platform is the Playstation 2 with a sure possibility of an Xbox and PC port 
+depending on the games success. The Playstation 2 w ill be our primary platform. 
+ 
+Concept Art"
+"Oliver James Cooke  09000916 
+7"
+"Oliver James Cooke  09000916 
+8"
+"Oliver James Cooke  09000916 
+9"
+"Oliver James Cooke  09000916 
+10"
+"Oliver James Cooke  09000916 
+11  
+ Game Mechanics  
+Core Game play  
+ The core game play in “Silent Hill 2” will be a mix  of both fighting “monsters” and solving 
+puzzles, both of which serve your progress in the g ame. 
+ Fighting – The fighting in “Silent Hill 2” will be  based much around its survival horror 
+counterpart “Resident Evil”. What will set the comb at apart from our counterparts is the overall 
+style and pace of the game. Unlike the previous gam e and much of the “Resident Evil” series, 
+players will be more inclined to avoid battles enti rely because of the disturbing nature of their 
+design and sound. A slew of enemies will be roaming  the streets, including back alleys and 
+hidden under cars. When it comes to interior explor ation, enemies will be dotted around 
+corridors and rooms, but sparsely enough to maintai n the feeling of isolation and fear. The 
+game works heavily on the concept that what you don ’t see, makes you increasingly scared. An 
+example of this would be to have a long dark corrid or with nothing but doors to explore. The 
+player cannot see to the other end of the corridor,  creating the fear that something is at the 
+end of the corridor, making the player move apprehe nsively to the other end. A possible way to 
+describe the combat in “Silent Hill 2” is to compar e it to other survival horror games. For 
+example,  in survival games such as Resident Evil, you will walk down a corridor with a sick 
+feeling in your stomach, and then all of a sudden a  dog will jump out and attack you. You can 
+kill the dog and end the threat until more enemies come along, usually a horde of zombies. 
+ In Silent Hill, you will walk down a corridor with  a sick feeling in your stomach, and 
+nothing will happen, the threat doesn’t start and i t never ends. Killing one nurse in a somewhat 
+abandoned hospital is not enough to know you’re saf e. The fixed camera angles that were a 
+core characteristic of the first game will return, to help intensify this feeling of isolation and 
+apprehension. The two main ways of detecting these monsters will be a flashlight for visual 
+detection, and a radio that emits static when a mon ster is nearby. Both these methods allow 
+the player to be warned of danger, but the sensory perception of the monsters mean that 
+danger is most certainly on its way. Incidentally, if James leaves his flashlight off in dark areas, 
+the screen will increasingly gain brightness, imita ting the effect that his eyes are getting used to 
+the dark.  
+ Puzzles – The Puzzles in “Silent Hill 2” will trul y attempt to break usual puzzle solving 
+conventions in the genre. Opposed to the usual puzz le solving which would remove you from 
+Oliver James Cooke  09000916 
+12  
+ the immersion of the world, the intention here is t o incorporate the necessary “pieces of the 
+puzzle” into the narrative. Instead of the cliché “ there is a hole here for a crest, go and find it”. 
+The style of the puzzles in “Silent Hill 2” will de fiantly reflect the atmosphere and underlying 
+narrative of the game. The audience is promoted to think hard about the solutions, giving the 
+players neither the task of collection, nor the tac tic of try every combination. This method was 
+incorporated in the first Silent Hill at heart. The  puzzles could be cracked via trial and error, but 
+the iconography surrounding the puzzle made it incr easingly disturbing. 
+Game Flow  
+ Typical game flow in “Silent Hill 2” will be norma lly quite linear. Players will be given a 
+portion of the narrative, then be given a reason in  that narrative to explore a certain section of 
+the town, which will be usually an indoor section ( levels). On entering the section, they will 
+encounter 3 things consistently, 
+- Enemies 
+- A puzzle or puzzles 
+- Multiple narrative sections, with one or two intens e plot progression scenes 
+Once the “level” is over, the same basic sequence w ill happen, filling in a lot of the story 
+and giving the player a reason to continue their pr ogression through the game. Scattered 
+between the usual game flow conventions will be spe cial “set pieces”, which will act as a buffer 
+between two locations in the game, and will mostly house a cut scene, fleshing out characters 
+or plot."
+"Oliver James Cooke  09000916 
+13  
+  
+Characters  
+ 
+James Sunderland 
+ 
+ James is bought to Silent Hill after receiving a l etter from 
+his dead wife of 3 years, Mary. James is not the ty pe of person to 
+turn into a mad man, he is calm and rational. Despi te this he must 
+go to Silent Hill to understand what is going on. P lagued by his 
+own doubts and a small hope he may be reunited with  his wife, 
+James ventures on into Silent Hill to attempt to un cover the 
+truth as to what is going on. James must now deciph er what is 
+real and what is his imagination, in his search for  Mary. 
+ 
+Mary Sunderland 
+ 
+ Silent Hill holds many precious memories for Mary and her 
+husband. She enjoyed the visit so much that she mad e James promise 
+to take her back. Unfortunately that was not a poss ibility, as 3 years 
+ago she fell victim to a fatal illness. The letter James receives is 
+undoubtedly Marys handwriting, but dead people cant  write letters, 
+can they? 
+Laura 
+ 
+ Laura moves through the streets of Silent 
+Hill with no fear and fully relaxed. She is stubbor n, self willed and 
+appears to be much older mentally than she looks ph ysically. Laura 
+claims to know Mary and is constantly and obstacle in James’ 
+search, in order to further her own. 
+ 
+ 
+ 
+ 
+ 
+ 
+Oliver James Cooke  09000916 
+14  
+  
+ 
+ 
+Eddie Dombrowski 
+ 
+ Eddie like James is not from Silent Hill and was 
+“summoned” to the town. Eddie appears frightened an d 
+helpless to what the town has to offer him. The tow n offers 
+nothing to Eddie but monsters and ridicule, though something 
+never quite seems right about Eddie, like he’s not all there. 
+ 
+ 
+Angela Orosco 
+ 
+ Angela comes to Silent Hill to find her family, mu ch like 
+James is. She almost harnesses a split personality,  being polite, 
+scared and violent, all in the same discourse. Ange la is 
+extremely paranoid and throughout the game she slow ly moves 
+into insanity.  
+ 
+ 
+Maria 
+ 
+ Maria and Mary practically look identical, all be it a change 
+of hair and clothes. Mary is  a mysterious characte r who never 
+lets on what she really knows. She consistently ask s James to 
+save her from the danger that Silent Hill has to of fer. Tagging 
+along with James, she spends a lot  of time in very  precarious 
+positions.  
+ 
+ 
+ 
+ 
+ 
+Oliver James Cooke  09000916 
+15  
+  
+Monsters  
+ 
+ The tables below dictate how many hits/shots it ta kes to vanquish each monster. “X” 
+means no damage can be dealt. “!” means the weapon cannot reach the enemy. “0” means the 
+weapon is introduced later than the monster still r emains in the game. 
+ 
+Lying Figure 
+ 
+  
+ This monster ears a straight jacket and is extreme ly quick when it is 
+on the floor, crawling at phenomenal speed. When st anding it hobbles 
+towards James, and spews an acid with an amiable ra nge. 
+ 
+ 
+Creeper 
+ 
+ 
+ The creeper is a small insect that normally travel  in groups. They 
+will only attack if you block their path. This mons ter isn’t particularly 
+aggressive, normally biting once or twice before le aving. 
+ 
+ Weapon Beginner Easy Normal Hard 
+Wooden Plank  2-8 5-11  9-15  16 -24  
+Steel Pipe 2-8 4-10 6-14 15-22 
+Great Knife 1 1 1 1-3 
+Handgun 3-6 4-10 8-14 16-24 
+Shotgun 1-2 1-3 1-4 4-7 
+Hunting Rifle 2 2 1-3 5-6 
+Weapon  Beginner  Easy  Normal  Hard  
+Wooden Plank  1 1-2 1-2 2-3 
+Steel Pipe 1 1 1 1-2 
+Great Knife 0 0 0 0 
+Handgun 1 1-3 1-4 3-8 
+Shotgun  1 1-3 1-3 2-4 
+Hunting Rifle  0 0 0 0 
+Oliver James Cooke  09000916 
+16  
+  
+Mannequin 
+ 
+ The mannequin is essentially two sets of legs join ed together. It 
+has no sensory organs but can still detect light an d noise. It attacks with 
+its upper limbs and although limited by range, it c an deal a lot of 
+damage. 
+ 
+ 
+ 
+Bubble Head Nurse 
+ 
+ The ascetic characteristics of the nurse are far f rom its intentions, 
+donning a shirt line that reveals just enough skin and a skirt line to match. 
+The nurse carries a lead pipe around with her to at tack James and moves 
+slowly with a limp. 
+ 
+ 
+ 
+ 
+ Weapon Beginner Easy Normal Hard 
+Wooden Plank 2-8 5-11 8-14 16-22 
+Steel Pipe 2-8 4-10 6-13 14-20 
+Great Knife 1 1 1 2-3 
+Handgun 3-6 4-9 8-12 16-22 
+Shotgun 1-2 1-3 1-3 2-7 
+Hunting Rifle 2 2 1 5-7 
+Weapon Beginner Easy Normal Hard 
+Wooden Plank  1-3 9-16  14 -20  30 -36  
+Steel Pipe 1-8 5-12 8-15 18-25 
+Great Knife 0 0 0 0 
+Handgun 1-10 8-10 16-24 24-38 
+Shotgun  1-2 1-3 1-4 3-8 
+Hunting Rifle  0 0 0 0 
+Oliver James Cooke  09000916 
+17  
+  
+ 
+Mandarin 
+ 
+ 
+ This monster is rare to find. They shimmy along gr illes that James 
+walks over, if standing directly above one, a manda rin will attack with a 
+spike. 
+ 
+ 
+Abstract Daddy 
+ 
+ 
+ This monster is a manifestation of Angela’s Father,  but appears 
+in slightly modified forms around the prison. It re sembles a human 
+trapped between a door. It has a deadly jaw which h as a tendency to 
+lock onto its victims head. 
+ 
+ 
+ 
+ 
+ 
+ Weapon Beginner Easy Normal Hard 
+Wooden Plank  ! ! ! ! 
+Steel Pipe ! ! ! ! 
+Great Knife ! ! ! ! 
+Handgun 2-3 7-8 10-12 16-20 
+Shotgun 1 2-3 4-5 7-8 
+Hunting Rifle  1 1 1-2 4-5 
+Weapon Beginner Easy Normal Hard 
+Wooden Plank  2-4 8-12  X X 
+Steel Pipe 2-5 7-12 X  X 
+Great Knife 1 1 1 1-2 
+Handgun 2-6 4-10 16-20 X 
+Shotgun 2-3 2-3 2-5 2-7 
+Hunting Rifle  2 2-3 3-5 5-7 
+Oliver James Cooke  09000916 
+18  
+  
+Flesh Lip 
+ 
+ 
+ This monster is encountered when Laura locks James  in a room 
+looking for Mary’s letter. The flesh lip hangs from  the ceiling in a cage 
+much like Maria is killed in at the end of the game . It resembles a body 
+bag with legs extruding out of the bottom, which it  uses to strangle its 
+victim.  
+ 
+ 
+ 
+ 
+Pyramid Headed Monster 
+ 
+ The pyramid headed monster confronts James numerou s times 
+throughout the game, like a bad nightmare for James . James cannot defeat 
+this monster, all he can do is escape. It attacks w ith a great sword or a 
+spear, and when its attacks connect, deals a deadly  amount of damage.  
+This monster holds psychological meaning to James, which the player 
+learns at the end of the game.  
+ 
+ 
+ Weapon Beginner Easy Normal Hard 
+Wooden Plank  6-10  X X X 
+Steel Pipe 18-21 75-78 X X 
+Great Knife 0 0 0 0 
+Handgun 15 54 75 126 
+Shotgun 3-6 12-15 12-15 18-24 
+Hunting Rifle  0 0 0 0 
+Weapon  Beginner  Easy  Normal  Hard  
+Wooden Plank  Max 18  X X X 
+Steel Pipe Max 4  Max 15 X X 
+Great Knife Max 3 Max 5 Max 13 Max 36 
+Handgun Max 24 Max 86 Max 135 X 
+Shotgun  Max 9  Max 26  Max 50  X 
+Hunting Rifle Max 4 Max 13 Max 20 Max 50 
+Oliver James Cooke  09000916 
+19  
+ 
+ 
+Maria / Mary Demon 
+ 
+ This is the final incarnation of Maria / Mary (dep ending on which 
+ending you attain). She attacks using tentacles and  will do anything she can 
+to kill James, stabbing or strangling him at every opportunity she gets.  
+ 
+ 
+ 
+Eddie 
+ 
+ Eddie breaks after the pressures of Silent Hill an d his own 
+past get to him. Eddie wields a handgun with 6 bull ets and has a 
+downtime of 5 seconds when changing ammo. He moves slow and 
+getting to close to him will force him to use his f ists. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Weapon  Beginner  Easy  Normal  Hard  
+Wooden Plank 2-3 5-7 13-15 X 
+Steel Pipe 2 5 10 X 
+Great Knife 1 2 3 7 
+Handgun 10-12 36-40 50-54 176-184 
+Shotgun 3-4 5-16 12-26 26-48 
+Hunting Rifle  3 8 16  44  
+Weapon  Beginner  Easy  Normal  Hard  
+Wooden Plank  1 12  X X 
+Steel Pipe 1 6-7 8 12-14 
+Great Knife 1 1 1 2 
+Handgun 1 15-16 32-34 42-46 
+Shotgun  1 3-4 4-10  7-14  
+Hunting Rifle 1 4-8 7 8 
+Oliver James Cooke  09000916 
+20  
+ Game Play Elements  
+ 
+FlashLight & Radio 
+ 
+The flashlight helps James see in the dark, helping  him to see important items and 
+monsters. Equally having the flashlight on makes Ja mes easier to be spotted by danger. The 
+radio helps James detect nearby enemies, emitting a  loud static when danger is nearby. Like the 
+flashlight, the radio can also draw attention to Ja mes. The radio does not work for normal 
+transmissions. 
+ 
+James ’ Personal Items 
+ 
+ James’ personal items consist of a photo of Mary a nd a letter from Mary. 
+ 
+ 
+Oliver James Cooke  09000916 
+21  
+  
+Health Items 
+ 
+ When used, the health drink restores 25% health. T his item is fairly common. The first 
+aid kit can restore 50% of health. This item is con siderably rare. The Ampoule has the ability to 
+restore 100% of health. This item is extremely rare  and wont present itself easily. 
+ 
+Blunt Weapons 
+ 
+ The plank is the first weapon in the game. It deli vers limited damage and has a limited 
+range. The Steel pipe swings faster, does medium da mage and has a medium range. Both can 
+deliver light and heavy attacks. 
+ 
+ 
+ 
+ 
+ 
+Oliver James Cooke  09000916 
+22  
+  
+Firearms 
+ 
+ The three firearms in the game are the pistol, sho tgun and hunting rifle. The pistol has a 
+high rate of fire, holds 10 bullets and does a limi ted amount of damage. The Shotgun has a 
+slower rate of fire, holds 6 bullets and is extreme ly effective in close range combat. The hunting 
+rife has an extremely low rate of fire, holds 4 bul lets and does and extreme amount of damage 
+from close or far away. All three require ammo, whi ch is placed around the game. 
+ 
+ 
+Other Weapons 
+ 
+ The great knife is the same weapon used by the pyr amid headed monster. It is the 
+slowest weapon in the game, but can normally kill a nything with one swing. The chainsaw is 
+extremely effective in close range combat, but can only be used after a brief waiting period to 
+start the chainsaw up.  
+ 
+ 
+ 
+ 
+Oliver James Cooke  09000916 
+23  
+  
+Keys 
+ 
+ There are a selection of keys throughout the game that open a variety of things like 
+doors or chests.  
+ 
+Various Puzzle Items 
+ 
+ These puzzle items will be used in order to unlock  new items needed to progress the 
+story. Some can be manipulated and others are just required to be used correctly."
+"Oliver James Cooke  09000916 
+24  
+ Weapon Properties  
+Blunt and Special Weapons 
+Weapon Wooden Plank Steel Pipe Great Knife Chainsaw  
+Possible to move 
+whilst holding 
+weapon  Yes Yes No Yes 
+Light attack Side swipe with 
+limited radius Blow Side swipe with 
+large radius Side swipe with 
+medium radius 
+Range Slight Large Large Medium 
+Sequence of Blows Rapid Rapid Very slow Rapid 
+Special Feature Two hits in quick 
+succession are 
+possible James takes a 
+small step 
+forward at each 
+blow Even when your 
+weapon is 
+lowered, only very 
+slow movements 
+are possible Motor needs to 
+be started 
+before use 
+Heavy Attack Overhead blow Overhead blow Overhead b low Stab 
+Range  Medium  Medium  Medium  Medium  
+Sequence of Blows Rapid/medium Rapid Very slow Rapi d 
+ 
+Firearms  
+Weapon  Handgun  Shotgun  Hunting Rifle  
+Possible to move 
+while holding the 
+weapon at ready  Yes Yes No 
+Possible to move 
+while shooting Yes No No 
+Bullets or shells per 
+magazine 10 6 4 
+1 shot every ... 
+seconds  0.5 2 1.5 
+Total quantity of 
+ammo  High Medium Low 
+ 
+ 
+Oliver James Cooke  09000916 
+25  
+  
+Game Physics and Statistics  
+  
+ Movement – James has 3 primary speeds, walk, jog a nd run. The player can primarily 
+walk anywhere at a set pace, the act of walking lon g distances will not take an effect on the 
+avatar. The next two speeds jog and run, are determ ined by how “tired” James  is, this will 
+usually be calculated by how long James  has been r unning consistently. If James runs for a long 
+distance it will eventually slow into a jog, after a period of jogging James will then burst into 
+running until “tired” again. This cool down time ca n be reduced by walking as opposed to 
+jogging. The tactic of running then stopping just b efore James gets tired, then bursting into 
+another lengthy run, will be abolished and will be calculated on how much running James has 
+done on average. These 3 speeds can be further alte red by being injured. Having James’ health 
+drop below a certain threshold will reduce the spee d of usual movement. James is also able to 
+sidestep to the left and right, as well as perform a 180 degree turn. 
+ 
+Combat – The rate of combat depends on which weapon  the player decided to arm 
+James with some close combat weapons will take long er to strike, but will inherently deal more 
+damage. This idea can be easily transposed to firea rms by allowing the better weapons to deal 
+more damage, but taking longer to reload, leaving t he avatar prone to attacks. When enemies 
+get attacked, they react to the damage depending on  their current health. This can mean they 
+will either be stopped from moving, get pushed back  or fall to the floor. When James gets hit, 
+there is a brief moment after that the player becom es prone to extra attacks and cannot 
+defend, just as if someone was pushed over in real life. James also has the ability to coup de 
+grace enemies that are in a prone position; he acco mplishes this by stamping on them.  
+ 
+Artificial Intelligence  
+  
+ The enemies in the game will react with two basic senses, sight and sound. These two 
+senses will give the AI an impression of carnal att acks. Unlike the “Resident Evil” series in which 
+the zombies attack with a need to feed, the monster s in “Silent Hill 2” attack with nothing more 
+than basic instinct.  
+ Sight – Enemies work on a radial system primarily.  The basic theory is, if James gets too 
+close to the enemy, the enemy will advance with int ent to harm. Some enemies when hit to the 
+floor, will have the ability to crawl away from Jam es at a fast pace, exiting the players sight 
+from the screen. This is used as a general regroupi ng mechanism for the enemies, in which they 
+then have time to stand up and perform better attac ks, as opposed to attacking from the floor. 
+In places of darkness, the radial system is depende nt on the flashlight James carries. If the  
+Oliver James Cooke  09000916 
+26  
+  
+flashlight is turned off then the enemy radius is d ramatically reduced and will only attack if the 
+player near enough bumps into the enemy. 
+ Sound – Enemies can also base attacks from the sou nds they hear. The sound of 
+footsteps and the radio which James carries, act as  a beacon for enemies. In turn the enemies 
+will advance to the source of the noise and attack James. Enemies will not hear the footsteps of 
+James while walking. 
+ The only time these two rules do not apply to the enemies AI is if there is a specific “set 
+piece”, in which the enemy is scripted to act in a certain way.   
+Player Controls  
+ 
+ 
+Analogue stick = Move                                      Triangle = Call map / Hide Map / Hide inven tory 
+Analogue stick + Square = Run                        Square = Run / Hide Map / Hide inventory 
+L1/R1 = Side Step                                               Circle = Flashlight on/off / Hide Map/  Hide inventory 
+L1+R1 = Turn 180 degrees                                Cross = Confirm action / Examine / Take or use  
+L2 = Centre camera                                                         items/ Hold R2 simultaneous ly to perform  
+R2 = Ready attack                                                            an attack. (Press Cross =  Light attack,  
+R3 = Fully restore health                                                Hold Cross = Heavy attack) 
+Select = Pause                                                     L1+R1+Start+Select = Soft Reset 
+Start = Open inventory"
+"Oliver James Cooke  09000916 
+27  
+ Interface  
+Flowcharts  
+ The following are flow charts for the different sc reens and their individual data flow. The 
+save screen and load screen are shared so it is onl y included once in the start screen flow chart."
+"Oliver James Cooke  09000916 
+28"
+"Oliver James Cooke  09000916 
+29"
+"Oliver James Cooke  09000916 
+30  
+  
+Functional Requirements  
+1 - Start Screen  
+ The selection on the start screen uses a simple hi ghlighted selection.  
+ 
+ 1:1 - Load 
+  The load screen is able to move across both memor y card slots and be able to 
+pick from multiple saves. 
+ 1:2 – Continue 
+  Clicking on continue will immediately take you in to your last game save by 
+date/time. 
+ 1:3 – New Game 
+  The new game screen has both the settings for act ion level and riddle level. Once 
+the riddle level has been set, the game automatical ly starts up. 
+ 1:4 – Options 
+  The options screen includes, 
+   Brightness 
+   Screen Position 
+   Button Config 
+   Control Type 
+   Vibration 
+   Auto Load 
+   Language 
+   Subtitles 
+   Sound 
+   BGM Volume 
+   SE Volume 
+ 
+2 - In Game  
+ Pressing start will bring up the in game menu. 
+  
+ 2:1 – Status 
+  The status section is not interactive and shows u p the avatars health. 
+ 2:2 – Equipment 
+  The equipment shows what you currently have equip ped. This is interactive and 
+clicking on the piece of equipment activates the co mmand section. 
+Oliver James Cooke  09000916 
+31  
+  2:3 – Command 
+  The command section is where you can decide what to do with the selected item 
+or equipment. These functions are, 
+  Examine 
+  Equip 
+  Unequip 
+  Reload 
+  Use 
+  Combine 
+2:4 – Options 
+ These options are the same at the start screen, an d use the same menu layout. 
+2:5 – Memo 
+ Clicking this opens up another window containing t he “header” of each memo 
+you have collected. You are highlighted over the la st one you obtained, you can move 
+up and down a list and click on one to read it. 
+2:6 – Map 
+ Clicking on the map text opens up the current map of the building, provided that 
+it has been acquired. If not, a simple message stat es you don’t have a map of this area, 
+and it opens up the main map of “Silent Hill” by de fault."
+"Oliver James Cooke  09000916 
+32  
+ 
+    
+Mock Up Screens Mock Up Screens Mock Up Screens Mock Up Screens     
+ 
+ 
+ 
+ 
+ 
+Oliver James Cooke  09000916 
+33  
+ Art and Video  
+ 
+Overall Goals Overall Goals Overall Goals Overall Goals     
+ 
+ Artistic style was a true staple for the previous game, Silent Hill 2 will intend to bring the 
+same motifs of the first game with unbelievable vib rancy and character, into this generation of 
+consoles. The true artistic goal of this project is  based on a concept of simultaneous repulsion 
+and attraction, to define their impact to the playe r. Interior environments will look abandoned 
+and disgusting, but at the same time will have a di stinct charm. Almost like grim visual 
+backgrounds and set pieces will have an aura of mys tery about them. The exterior 
+environments will be treated differently. The town will be given a true sense of isolation by lack 
+of interactivity, making the town seem bigger that it really is. One key sequence intended for 
+implementation is the extended walk to the town of Silent Hill. We intentionally want this 
+sequence to be long, as to give the player a true f eeling that the town is isolated and soon you 
+will be. Additionally the game will have a grainy f ilter for the entirety of the game, to dirty the 
+images and give them character. In addition, variou s artistic decisions placed around the game 
+will give the player subliminal help with understan ding the story. One idea of which is finding a 
+person dead slumped in a chair, the exact character  model will be of the main character James, 
+but the art direction of the body will make it only  slightly distinguishable as your character. All 
+of these visual elements will aid each other to con vey a mysterious feeling of solitude and 
+isolation, which is the true nature of the game. 
+ The monsters in the game will also adopt this meth od of simultaneous repulsion and 
+attraction. The monsters are not extremely abstract  from human anatomy, giving the player a 
+fear of relation to the very things they are scared  of or even kill. Hits of sexuality will be 
+intentionally placed in the art direction, making t he nurse’s clothes rather short, and the 
+mannequins legs silky smooth. These intentional dec isions are implemented to heighten the 
+male insinuation of the pyramid head monster, a mal e slaughtering and suggestively 
+sodomizing the female related monsters.  
+ The human characters will take on a mundane approa ch on purpose. None of them are 
+meant to be super heroes and imperfections are need ed to appreciate the fragility of the lives 
+at stake. All of the characters except Laura have s kin imperfections and extremely normal 
+clothes. Incidentally the same face is used for bot h Mary and Maria, further strengthening their 
+roles in the story. 
+Oliver James Cooke  09000916 
+34  
+  
+ 
+2D Art 2D Art 2D Art 2D Art     
+ 
+- All menu objects (weapons, items etc) 
+- All menu backgrounds 
+- Ending credits backgrounds 
+- All textures for environments 
+- Box art / Manual art 
+- Advertisement art (mostly comprising of character r enders with alterations)  
+- Web page art 
+- Town maps 
+- All individual pieces of art in game (paintings) 
+- Ending Credits 
+ 
+3D Art & Animation 3D Art & Animation 3D Art & Animation 3D Art & Animation     
+ 
+- All aspects of character animation 
+- All modelled assets (town, buildings, items) 
+- All Character & monster models 
+ 
+Cinematics Cinematics Cinematics Cinematics     
+ 
+- All in engine cut scenes 
+- All pre rendered FMV cut scenes 
+- Promotional video for internet spots 
+ 
+ 
+ 
+ 
+ 
+ 
+Oliver James Cooke  09000916 
+35  
+ Sound and Music  
+ 
+Overall goals Overall goals Overall goals Overall goals     
+ 
+ The overall goal of the effects direction is to re move itself from the formality of other 
+such survival horror games, such as the “Resident E vil” series. The intentions are to make 
+sounds that have a physical reaction with the playe r, almost like there is something crawling 
+underneath your skin. As opposed to the usual sound s you would hear every day being used in 
+a different context.   
+ The musical composition and sound effects in the g ame will be entirely handled by Akira 
+Yamaoka.  The main theme for the game was composed before this document was made, 
+based entirely off the script. The rest of the musi cal composition will convey the true 
+melancholy of the script, which like the game, will  use unlikely combinations to portray a 
+distinct feeling to the player.  
+ 
+Sound Effects Sound Effects Sound Effects Sound Effects    & Music & Music & Music & Music     
+ 
+ To prevent repetition many of the “mundane” sounds  being used will be sampled 
+multiple times. For example opening a door will not  always have the same opening sound, and 
+footsteps will be different every pace. The more un usual effects will be comprised from 
+numerous different sources, from synthesized sounds , to multiple overlays of samples from 
+animals. 
+ The music throughout the game will have a constant  motif of melancholy. There will 
+obviously be no upbeat, major key jingles for compl eting milestones in game. Even upon picking 
+up crucial items to progress the story, the jingle will be small and minor key. A lot of the music 
+could be reused during similar sequences, but also,  silence will be a key contributing factor, 
+setting suspense and mood for the player.  
+Combinations of sad melodies with strong beats, abs tract synthesized composition and 
+elegant piano pieces, will really set the tone for the game and bring out the games fragile story. 
+A contrast of the ugly and the beautiful, or as sta ted before, repulsion and attraction. 
+Oliver James Cooke  09000916 
+36  
+ Story  
+ 
+ The beginning of the game introduces James Sunderl and, the main character and 
+avatar of the player. The game starts with James on  the cusp of Silent Hill, standing on the 
+observation deck overlooking Toluca Lake. James has  travelled to Silent Hill after receiving a 
+letter from his wife Mary, who had apparently died from an illness 3 years prior to James’ 
+return to the town. The letter James possesses stat es that Mary is waiting for him in their 
+“special place”. This somewhat confuses James, as t he whole town itself could be seen as their 
+“special place”. James considers that the park by t he lake could be the location the letter 
+mentions, and decides to leave the observation deck  and head to town.  
+ 
+ After a small amount of travel, James runs into a teenage girl by the name of Angela, 
+in a graveyard. Angela is startled by James, showin g a sheer disbelief when James mentions that 
+he is lost. Angela states she is looking for her fa mily in Silent Hill and points James in the right 
+direction. James eventually reaches the town to rea lise to once beautiful town he and Mary 
+once loved, is now no more. A fog shrouds the entir ety of the towns rotting abandonment, as 
+well as the humanoid monsters roaming the streets, waiting to attack James. With the initial 
+route to Rosewater Park blocked, James is forced to  find another route, so he decides to try 
+another route, through Woodside Apartments."
+"Oliver James Cooke  09000916 
+37  
+  Inside the apartments, James meets up with Eddie, who is vomiting in a toilet. Eddie 
+defensively denies his involvement with a dead body  laying only a few feet away from him. 
+Eddie like James claims to have been summoned to th e town, and can not quite understand 
+their own rational for being there. It is here that  James also runs into a little girl called Laura. 
+Laura appears to be immune to the effects the town appears to be having on James. She also 
+has an unexplained loathing for James, as well as k nowing the identity of Mary.  
+ 
+ After taking a small leap into the parallel Blue C reek Apartments, James runs into 
+Angela again, but this time lying on the floor in o ne of the rooms wielding a knife. Angela 
+portrays a more sporadic mood of fear, aggression a nd politeness, all in the same discourse 
+with James. Fearing she may be suicidal, James acqu ires the knife from Angela and she leaves in 
+a flurry of emotions. During this time James encoun ters the Pyramid headed monster for the 
+first time, sodomizing and killing other monsters i n various locations around the apartments. 
+Nothing in James arsenal will kill the monster, and  James decides to flee. 
+ 
+ When James finally reaches his destination, he is met by Maria, who is near enough 
+identical to Mary, with the exception of more provo cative clothes and an attitude to match. 
+Maria appears to have insight into situations that only James or Mary would have, talking 
+intelligently about Mary’s death and other “special  places”. James denominates that The 
+Lakeview Hotel could be the “special place” Mary ta lks about, thus that will be his next 
+destination. There are no boats at the dock to cros s Toluca Lake to reach the hotel, so naturally, 
+James must find another way. Though not alone, as M aria guilt trips James into letting her 
+accompany him. James detours through the bowling al ley meeting back up with Eddie and a 
+quick exiting Laura. Eddie refuses to chase after L aura and opts to stay and eat pizza. On James’ 
+exit from the bowling alley, Maria claims to have c hased the little girl and convinces James they 
+need to find her out of concern."
+"Oliver James Cooke  09000916 
+38  
+  
+ The chase leads them to Brookhaven Hospital, where  upon entering Maria falls 
+increasingly tired and decides to stay in one of th e rooms, leaving James to find Laura. James 
+finds Laura and learns that she has known Mary for the last year, James argues this point 
+implying that it is impossible, for this, Laura loc ks him in a room full of monsters under the false 
+information that the room contained a letter from M ary. After the monsters are defeated, the 
+hospital undergoes an “other worldly” transformatio n and in this other world, Maria is missing. 
+James finds Maria in the hospitals basement and aft er a small reunion; they are chased by the 
+Pyramid headed monster. Attempting to make a quick escape down a winding corridor, James 
+successfully makes it to the elevator, but Maria is  not so lucky, getting trapped behind the half 
+closed elevator doors. The Pyramid headed monster k ills Maria for James to see, and James is 
+again alone. Upon exiting the elevator, James notic es Laura make a hasty exit from the hospital. 
+Outside the hospital, behind a statue lies a key to  the Silent Hill Historical Society, James’ next 
+destination.  
+ 
+ The Historical Society opens up to two locations n ot on the Silent Hill map. First the 
+Toluca Prison and then leading off that is the Laby rinth. The Labyrinth is where the Pyramid 
+headed monster resides and is also miraculously whe re James finds Maria, alive in cell which 
+she sensually asks James to come and get her. James  is unable to rescue her as by the time he 
+finds the route to her cell door; she is dead, kill ed by the Pyramid headed monster again. It is in 
+the Labyrinth that both Angela and Eddie find valid ity of their beaconing to Silent Hill. 
+Documents found in the prison imply that Angela kil led her father after many years of physical 
+and sexual abused condoned by her mother. James res cues a distressed Angela from a 
+monstrous incarnation of her father, only to receiv e more animosity and anger from Angela. 
+Eddie by this point has been forced to snap by the Labyrinth, disclosing that he killed a football 
+player, a dog, and then shot the dog’s owner. It is  apparent that by the time Eddie entered 
+Silent Hill he had in fact gone insane, killing any one who so much as looked at him funny. This"
+"Oliver James Cooke  09000916 
+39  
+ insanity quickly focuses on James, who is forced to  shamefully kill Eddie in self defence. It is 
+killing Eddie that forces James to seriously consid er his reason for being in the town. 
+ 
+ James exits the Labyrinth and acquires a small row boat to cross the lake to the hotel. 
+On his arrival James notes that the hotel hasn’t ch anged since his last visit 3 years ago. Inside 
+James finds Laura, who is considerably more co oper ative now. She gives James a letter that 
+Mary wrote, which states that Mary wanted to adopt Laura, and gave substantial evidence that 
+Laura had in fact know Mary for the past year. The truth is revealed to James after he enters 
+the room which he and Mary shared; containing a vid eotape he apparently left in the room 3 
+years ago. The video tape played a home movie of Ma ry in the room of the hotel, speaking 
+fondly of Silent Hill, then the video dramatically changes, showing static filled images of James 
+smothering his terminally ill wife with a pillow. L aura finds James and expresses her wishes to 
+carry on looking for Mary. James reveals to Laura t hat he in fact killed Mary, which makes Laura 
+upset and she abruptly leaves. It is at this point that the radio James has been carrying with him 
+picks up a transmission, which sounds like Marys vo ice asking James to find her. On his exit 
+from the room, the whole of the hotel has taken a d rastic chance of decor. The walls are now 
+burnt out and water is leaking everywhere, like the re had been a fire. Further inspecting the 
+hotel, James finds Angela standing on a burning sta ircase. She asks James back for the knife so 
+she can commit suicide, but James refuses to give i t to her, Angela believes James is saving it for 
+himself, but James reinforces that he would never t ake his own life. Angela starts ascending the 
+stairs and James makes a comment stating “it’s hot as hell in here”, Angela replies “you see it 
+too? It’s always like this for me”, signifying that  Angela’s life was a constant living hell. She 
+ascends the staircase to an undetermined fate."
+"Oliver James Cooke  09000916 
+40  
+  James continues to encounter Maria yet again who i s screaming out for his help. 
+Maria is then killed violently in front of James by  two of the Pyramid headed monsters. James 
+falls to his knees and begins to realise that the t wo monsters were created to punish him for his 
+sins, and that he does not need them anymore. The t wo pyramid heads impale themselves and 
+James is left to continue through a metal style com plex with a long winding ascent, and the 
+stories climax. 
+ 
+ 
+Multiple endings Multiple endings Multiple endings Multiple endings     
+ 
+“Leave” Ending 
+ At the top of the metal steps James finds what he assumes to be Mary, but is in fact 
+Maria in Mary’s clothes. James tells Maria that he doesn’t need her anymore, but Maria intends 
+to take James down with her. Maria transforms into a monster and James kills her. After Maria 
+is dead, the scene changes to James at Mary’s bed. James asks Mary for forgiveness, stating 
+that his reason for killing her was because he want ed his life back and he hated her. Mary 
+forgives him in the sense that she asks him to do o ne last thing for her, and go on with his life. 
+Mary hands James a letter and she passes away. 
+ Mary’s letter is read aloud and in full as opposed  to the section James reads at the 
+beginning of the game. After, James and Laura are s een at the graveyard where James met 
+Angela, and they leave Silent Hill together. It is insinuated that James fulfilled Marys wishes and 
+adopted Laura. 
+ 
+ “In Water” Ending 
+ 
+ The same set up as the “Leave” ending, but after M aria is dead an altered end scene 
+occurs. Instead of Mary accepting James’ plea for f orgiveness, she abruptly tells him that he is 
+paying for what he has done. Mary hands James a let ter and passes away. After this scene 
+James is seen carrying Marys body out of the room. The screen turns black the audience hears a 
+car starting, while James expresses that he didn’t know why he was so scared. The audience 
+hears a loud splash and Marys full letter is read."
+"Oliver James Cooke  09000916 
+41  
+ “Maria” Ending 
+ 
+ When James reaches the top of the stair case he fi nds Mary. He explains he came all 
+this way just to have the possibility to see her ag ain, but Mary is angry. Despite his best efforts 
+to explain his actions to Mary, she verbally attack s James, stating she could never forgive James 
+for what he did. She transforms into a monster and James eliminates her. After Mary is dead, 
+the scene changes to James and Maria by a bridge. J ames decides to leave Silent Hill with 
+Maria, stating that Mary is not there anymore and h e wants to be with Maria.  
+ Marys Letter is read out in full. After it is read  out, Maria and James start to ascend a 
+set of stairs back to the start location of the gam e. Maria gives out a small cough in which 
+James retorts “You’d better do something about that  cough”. 
+ 
+“Rebirth” Ending 
+ 
+ This ending sees James take on Maria at the top of  the steps and after she is defeated, 
+the scene changes to James rowing the same boat he used to get to the hotel. It is implied that 
+Mary is dead in the boat with James, expressing how  he cannot go on without her. James 
+finishes with the sentences, “This town, Silent Hil l. The Old Gods haven't left this place.  And 
+they still grant power to those who venerate them. Power to defy even death.” 
+ James intends to resurrect Mary somehow, how is le ft up to the players imagination 
+but with James and Laura the only two people left a live, it would suggest a sacrifice.  
+ 
+“Dog” Ending 
+ 
+ This ending is the comic relief ending. Through me ans denoted by game play, James 
+stumbles in on a Dog controlling multiple computers . James falls to his knees and says “It was 
+you all along!”. The dog proceeds to lick James’ Fa ce. This ending is unattainable by fighting the 
+end boss."
+"Oliver James Cooke  09000916 
+42  
+ Level Overview  
+ 
+ Silent Hill consists of 2 “worlds”, the “normal” w orld of a derelict town and the 
+demonic repulsive other world. The map layouts for this demonic world to not inherently 
+manipulate the geometry of the surroundings, instea d they unlock previously locked doors, 
+leading to whole new section of a building. 
+ Below is a series of maps, each with specific even ts listed. As well as the puzzles 
+encountered within the level, and their respective solutions. 
+ 
+Silent Hill Silent Hill Silent Hill Silent Hill    
+    
+ The Decor of Silent Hill is that of a derelict nat ure, although there is a distinguishable 
+essence of community about it. The fog that encases  the town almost washes out any colour 
+the town previously had to offer. A lot of the busi ness’ appear to be small independent 
+ventures, not noticeably having a huge shopping out let. The only main attraction is the Lake 
+Side Amusement Park which sits behind the Hotel, th ough the peace and tranquillity of the 
+town could be seen as an attraction by many. Abando ned cars and monsters are the main 
+things cluttering the streets of Silent Hill now."
+"Oliver James Cooke  09000916 
+43"
+"Oliver James Cooke  09000916 
+44  
+  
+Woodside Apartments 
+  The Apartments are relatively run down with paint p eeling off the walls. Not much 
+clutters the halls but each room has been uniquely used. A rusted stairwell spans the 3 floors of 
+the apartment block, each floor containing monsters . James meets Eddie for the first time in 
+this apartment block, as well as encountering the p yramid headed monster."
+"Oliver James Cooke  09000916 
+45"
+"Oliver James Cooke  09000916 
+46  
+  
+Blue Creek Apartments 
+ 
+ The Blue Creek Apartments was built next to the Wo odside Apartments. Blue Creek is 
+accessible through Woodside, by using a fire escape  that was knocked down to allow room for 
+Blue Creek. The decor is near identical to Woodside  Apartments, except for the distinct hint of 
+blue pain in the hallways. Monsters still roam the hallways, and a second appearance from the 
+pyramid headed monster is made. James also runs int o Angela here for the second time, and 
+convinces her to give him her knife."
+"Oliver James Cooke  09000916 
+47  
+ Brookhaven Hospital 
+ 
+ Brookhaven Hospital has a distinct decor, containi ng abandoned medical equipment, 
+operating tables and wheelchairs in the hallways. T he walls have also seen better days, showing 
+signs of plaster falling from them, and in some sec tions, ceilings entirely caved in. Brookhaven is 
+the first place to undergo the other worldly transf ormation. Doors become blocked by boxes or 
+materials, the walls are covered in tarp and many n ew disturbing noises can be heard, 
+especially a pig squealing in the basement. This bu ilding has an intense feeling of abandonment 
+and a distinct void of life. James suffers another encounter with the pyramid headed monster 
+here, as well as having Laura lock him in the exami nation room."
+"Oliver James Cooke  09000916 
+48  
+  
+Toluca Prison 
+ 
+ The Toluca Prison is not situated on any map of Si lent Hill, but in game it will appear to 
+be situated underneath the Silent Hill Historical S ociety. The prison is separated into three main 
+sections, dictated by the long corridors between th em. The far left of the map comprises of 
+visiting rooms and civilian offices. The middle sec tion holds the cells and other such rooms like 
+shower rooms and inmate essentials. The far right i s the prison courtyard. When the alternate 
+world is triggered, the courtyard quickly shifts to  a field of gallows, it is here that James finds hi s 
+own gravestone. The decor is drastically caged and run down. The floors are covered with a 
+combination of dirt and blood. Just like the hospit al, the prison has the feeling of a severe void 
+of life, except for the monsters roaming the hallwa ys."
+"Oliver James Cooke  09000916 
+49  
+ The Labyrinth 
+ 
+ The Labyrinth is situated below the prison and has  the appearance of a derelict 
+unused building. The walls look in relatively good shape except for a few red stains across a 
+small amount of the walls. This section is where th e pyramid headed monster appears to 
+reside, and where James is able to enter what seems  to be his workshop and steal his weapon. 
+The pyramid headed monster is also seen roaming the  halls of the lower labyrinth. The halls 
+look relatively similar with numerous ladders and d oors, making it easy to get lost in. 
+Symbolically, this location is the place when the k ey characters overcome their own “mental 
+maze”."
+"Oliver James Cooke  09000916 
+50  
+ Lakeview Hotel 
+ When James arrives at Lakeview Hotel it appears to  be just how he remembers it. The 
+hotel seems to be in good shape, with floral wallpa per and a grand piano, it looks like a nice 
+place to stay. The whole hotel is caked in a layer of dust though, further encompassing that 
+isolation and desertion. Once James sees the tape i ndicated in the story, the whole hotel 
+changes into the charred remains of a hotel, like i t had been burnt down. The hotel comprises 
+of three floors and a basement, monsters roam befor e and after the dramatic change."
+"Oliver James Cooke  09000916 
+51"
+"Oliver James Cooke  09000916 
+52  
+  
+Puzzles  
+ 
+ 
+Clock Puzzle (Woodside Apartments - room 204) 
+  On a wall opposite a clock there is a carving in th e wall with three names, Henry, 
+Mildred and Scott. There are lines next to each nam e, all pointing in different directions. There 
+is a document close by which has this information.  
+ 
+ Easy  – “Three different sizes, time on the run. Three y oung men circlin' round the sun. 
+Henry is short and very, very slow, Scott can't sto p, he's always on the go.” 
+ Normal and above  – “Three needles stand of three different heights.  The fat, the tall 
+and the thin. From slow to fast they move to the ri ght. Scott rests not on three, but fifteen” 
+  
+ The solution is the same for both difficulties. Th e names depict time, Henry = Hour, 
+Mildred = Minutes and Scott = Seconds. The player h as to move the needles on the clock to 
+match the line directions associated to the name. 
+ 
+Safe Puzzle (Blue creek Apartments - Room 203) 
+ 
+ The combination to the safe is hidden in a toilet.  
+ 
+ Easy to Normal  – The numbers are randomly generated. It is opened  in a padlock style 
+by spinning the dial in different directions. The d irections to turn are depicted on the document 
+found in the toilet.  
+ Hard  – This is the same as easy but the numbers are par tially replaced by roman 
+numerals. 
+ Extra  – Letters A to K replace all of the double digit n umbers (10 = BA, 24 = CE). 
+ 
+Cabinet Puzzle (Blue Creek Apartments - Room 105) 
+  Three coins are required to complete this puzzle, a n old man coin, a prisoner coin and 
+a snake coin. The coins will be placed in the surro unding areas. There is a cabinet with 5 holes 
+that will fit the coins. The inscription on the cab inet reads as follows. 
+ 
+ Easy  – “To the right is the lady / To the left is the o ld one / In the center draws the 
+other / Now just two spaces remain / But fear not f or now / The puzzle is done / The puzzle is 
+done.”  
+ Easy Solution  -  Old Man, Space, Snake, Space, Prisoner. 
+Oliver James Cooke  09000916 
+53  
+  Normal  – “Three bright coins in five holes be At one end sits / the Seducer of she / The 
+wind from behind / the woman doth play / The Formle ss One / Null, lies furthest from they / 
+The Old One beside / the Serpent sits not / Tis to the Prisoner's left / that he doth rot  “ 
+ Normal solution  – Space, Old Man, Prisoner, Space, Snake. 
+ Hard  – “First lies the seat of / He who is Peerless Sil ent and empty / heartless and 
+fearless / Beside him sits one who knows / The plac e of the servant is / next to throne.  
+ 
+Dozens of feet / yet not a single toe / The One tha t is Hidden / beside him doth go / Seducer of 
+dreams / creature of Hades Lying further from / Man  and closer to Lady  
+ 
+Man and Woman seeing all / Heedless to the Raven's call / Silent and Hidden the two may be / 
+They be not there for you to see / Return them to w hence /they would be / And blessing shall 
+/descend on thee  
+ 
+I speak thus with / the North Star behind me / The birth of the sun is / the start of the story” 
+ Hard solution  – Space, Old Man, Space, Snake, Prisoner 
+ Extra  – “Like coins in the hazy / aether tossed / Our so uls must by / their sinful weight / 
+Descend to earth / with lightness lost  
+ 
+To ""right"" the sins / that they hath laid / When thri ce in falling they intone / The Happiness shall 
+be thy own / The first note be not by / the Horned One rung / Though it be there that / all sins 
+be sprung  
+ 
+The Bringer of Life and / the Bringer of Shame / Th e sins of the latter be / even more tame  
+ 
+Though coming / in the Aged One's wake / The Formle ss One's soul / in fear doth quake  
+ 
+The Needless One, silent, / with hungers all sated / Is least then in sin / with his lusts all abated  
+ 
+For the gravest of sinners / His place be appointed  / And if he be lucky / May his soul be 
+anointed” 
+ Extra solution – Old Man, Space, Snake, Space, Prisoner 
+ 
+Trick or Treat Puzzle (Brookhaven Hospital - Store Room) 
+ Randomly entering this room triggers a voice on the  intercom. The player answers via an 
+onscreen prompt.  
+Oliver James Cooke  09000916 
+54  
+  All difficulties  - Merry-Go-Round, haunted house, roller coaster, f erris wheel and tea 
+cups. Silent Hill is home to a thrilling amusement park that both children and adults love. The 
+question is: What is the name of this amusement par k? 
+1) Fantasy Land; 2) Silent Hill Amusement Park or 3 ) Lakeside Amusement Park 
+Silent Hill witnessed a gruesome murder a few years  back. A brother and sister were playing in 
+the road when they were attacked and chopped into p ieces with an axe. Torn flesh, smashed 
+bones, splattered blood, and finally... What a terr ible tragedy. What gruesome end to such 
+innocent lives. What was the name of the murderer w ho committed this vile act? 
+1) Walter Sullivan; 2) Scott Fairbanks or 3) Eric G ein 
+South of the lake is a deserted old neighborhood ca lled South Vale. From there to Paleville, the 
+central resort area northwest of the lake, there's only one road you can take. Just one road, no 
+more. The third and final question is: What is the name of that road? 
+1)  Bachman Road; 2) Rendell Street or 3) Nathan Avenue  
+Answers - Question 1: Lakeside Amusement Park  
+Question 2: Walter Sullivan 
+Question 3: Nathan Avenue   
+Face Cube Puzzle (Labyrinth Beneath Prison) 
+ The player must rotate a cubed head which simultan eously rotates the position of the 
+room. The player must rotate the room until there i s a exit other than the entrance they used.  
+Hanged Man Puzzle (Execution Rooms in Labyrinth) 
+ The player is confronted with a sign by 8 empty no oses.  
+ “Only the sinless one / can help you here / Mistak enly pull on / a criminal's rope and / 
+your reward will be returned / to you in a shape mo st / wondrously strange” 
+ In another room the player is confronted with bodi es in body bags, hanging from 
+nooses. The puzzle is completed by pulling the empt y nose of the criminal who is innocent. 
+(Murderer, Arsonist, Bodily Injurer, Counterfeiter,  Thief, Embezzler, Kidnapper, and Swindler) 
+  
+ 
+ 
+Oliver James Cooke  09000916 
+55  
+ Easy  –  
+He committed an evil crime / He turned a happy home  /into a pile of ash / For that, he should 
+die. 
+They also committed crimes / They tried to fraud /a nd trick others. / So their reward too is 
+natural.  
+Even he cannot be forgiven / My friend without his left hand / And so his death bothers me not.  
+And what of him? / He also is not sinless. / There is only one here / who is innocent.  
+The missing child was / nowhere to be found, / And so there was / no proof of his guilt. / His 
+death was a tragedy.  
+That is all I wish to say. / It was neither justice  / nor retribution. 
+ Easy Solution  – The Kidnapper 
+ Normal  –  
+Dead men, dead men / swinging in a tree / How many dead men / do you see? / Tongue turned 
+blue and / face gone grey / Watch them as they / tw ist and sway  
+The first one killed / the butcher man / Then cooke d him in / the frying pan / Served him to his 
+hungry guests / And gave them seconds on request  
+The next one with his smile / and sweets / Stole po or children off the streets / To men who 
+dressed unsavory / He sold them into slavery  
+Breaking into home at night / The thief he had a na sty fright / Filled his foolish head with ale / 
+Woke in the morn in the county jail  
+The artist with his daunting skill / Tried his hand  at painting bills / But caught in rain he was 
+undone / When the ink he'd use did / start to run  
+With promises of great return / Taking gold he did not earn / Bundled it up out of sight / Quietly 
+slipped off into night  
+Three houses into ashes burned / The sheriff with n o place to turn / Did spy a stranger to his 
+town / Locked him up and beat him down  
+Dead men, dead men / swinging in a tree / How many dead men / do you see? / Six feet long 
+and /six men wide / Round their necks / the noose b e tied 
+Oliver James Cooke  09000916 
+56  
+  Normal Solution  – Arsonist 
+ Hard  –  
+""I do not wish to die / But tomorrow I will climb / the thirteen steps.  
+Please someone - answer me / Why must I die come th e morning?  
+The man imprisoned beside me / believed me. ""Because  they're / all insane, that's why,"" he 
+said / Of course I know his opinion / will change n othing. ""Now you / know why I struck out at 
+them,"" / he muttered.  
+The man who was executed / yesterday, the one who h ad / said his job was to sell dreams / 
+said that was not true.  
+But the man who is to be executed / the day after t omorrow for stealing / children shouted 
+back that it was / true  
+The man who was hung today / did not answer. ""They' ll kill me / either way,"" he said. He was / 
+caught embezzling public money / so he hasn't any h ope for mercy  
+The man who is always quietly / smiling to himself said ""I am / happy for I will soon be with 
+her.""  
+I do not wish to die / I long only to return home. / But I know it is not to be. / Though I have 
+done nothing, this / crime has been thrust upon me.  
+Someone save me. This is not / judgment. They are b loodthirsty / and I am their sacrificial 
+lamb!""  
+ Hard Solution  - Counterfeiter 
+ Extra – 
+ “We may visit death upon the head / of the sinner but to what avail?  
+In the name of retribution / we took part in a bitt er / comedy this day  
+You, hanging as you do / by your neck / Unforgiven and cursed by all.  
+Five of them committed crimes, / six went out for a  drink and / were captured there.  
+Only one of them was innocent, / but they knew not that . 
+Oliver James Cooke  09000916 
+57  
+ The bloodstains remaining / are proof of their guil t. / Trodden upon and thus created, / they 
+are paths to / Hell or the Void.  
+The white bandages stained / with crimson, / The re mains upon the scorched / black earth, / 
+The whispered cries of the maiden. / They are but m eaningless / contract . 
+They are also signs of guilt.  
+But one of them was / done without reason. / It was  done out of fear / and a ripe imagination . 
+Sinning alone at the / end of a rope / it is nothin g less than / a disgrace to us all .” 
+ Extra solution – Thief 
+Music Box Puzzle (Lakeview Hotel - Lobby) 
+ This puzzle requires the player to put a selection  of collected music boxes in the correct 
+slots, based on a riddle. The three music boxes are  Cinderella, Snow White and The Little 
+Mermaid.  
+ Easy – “When the Lost One is returned / the sour note sh all turn sweet” 
+ Easy solution – The music boxes can be placed in any order. 
+ Normal – At this level, there are inscriptions at each pla ceholder. 
+ Normal solution - 
+“Seat of the Princess / who fled at midnight” = Cin derella 
+“Seat of the Princess / who awoke from death” = Sno w White 
+“Seat of the Princess / who spoke no words” = The L ittle Mermaid 
+ Hard and above – The same as normal difficulty, each has an inscri ption. 
+ Hard and above solution  – 
+“Twas shameful greed did stain / her shoe with bloo d” = Cinderella 
+“Beauty - Both a blessing / and a curse thou be” = Snow White 
+“Even so, I still want to believe / that she was ha ppy” = The Little Mermaid 
+Oliver James Cooke  09000916 
+58  
+ Market Analysis  
+Target Market Target Market Target Market Target Market     
+ Silent Hill will be developed for the Playstation 2. This platform was chosen as it has a 
+huge install base, which will enable to game to rec eive a wide reception of audiences. The 
+Playstation platform has proven to be the stable gr ound for the mature style of game. Silent Hill 
+released on the Playstation as well as the Resident  Evil series, which did extremely well. 
+Continuing previous success, we believe the same co nsumers of these titles will have converted 
+to the upgraded Playstation 2 hardware, thus the in stall base denotes our market within that 
+platform. Although sales show the first Silent Hill  game did not create as much hype or profit as 
+the Resident Evil series, numerous publishing bodie s congratulated the game as being 
+extremely innovative. We intend to further attract the niche audience our first game created 
+and expand beyond that, enticing new players to enj oy the psychological horror. These new 
+players will be placed in the 13 to 25 age range, w e chose this as younger players will revel in 
+the combat and gore aspect, while older players wil l get more enjoyment from the story and 
+the puzzles. Typically the game will aim at a male audience, though the standard of the art 
+direction could considerably influence a female aud ience. 
+Top Performers Top Performers Top Performers Top Performers     
+ Silent Hill 2 will be the first big release for th e genre on a new operating platform. We 
+can see other titles prom the previous generation w hich proves the genre is strong. Such titles 
+like Clock Tower reinvented the genre by changing t he pace of combat, making is truly about 
+surviving the horror as opposed to shooting everyth ing. Clock Tower went on to split audiences, 
+until it too, created their niche audience. The Res ident Evil series, though extremely differently 
+paced to Silent Hill, delivered the classic surviva l horror experience. Multiple encounters, 
+sudden exhilarating rushes and fantastic art design . It is this pattern which will allow Silent Hill 2  
+to be a success for not only the platform but the g enre. Silent Hill 2 will bring its distinctive styl e 
+to the table of the next generation, and hopefully broaden the genre for years to come. 
+ 
+    
+    
+Oliver James Cooke  09000916 
+59  
+ Feature Comparison Feature Comparison Feature Comparison Feature Comparison     
+ The main comparison for Silent Hill 2 from previou s games will be the obvious graphical 
+leap. The story will harness the power of the platf orm to deliver stunning visuals and 
+unprecedented emotional involvement. The sound qual ity will be a major improvement and so 
+will the resolution our game will be playable in. M odels and textures will be substantially 
+clearer, with a better capability to encapsulate mo re on screen at once. The vibration function 
+of the Playstation 2 controller will also add numer ous enhancements to the game play 
+experience. Silent Hill 2 will continue its predece ssor’s staple on the market, reinventing 
+psychological horror through a level of storytellin g maturity not seen in the genre."
+"Oliver James Cooke  09000916 
+60  
+ Bibliography  
+- Silent Hill 2 + Bonus Disk (PS2 + PC) 
+Publisher: Konami / Fun TV 
+- Silent Hill 2 Official Strategy Guide 
+Publisher: Piggyback / Konami 
+- Silent Hill 2 Restless Dreams Official Strategy Gui de 
+Publisher: Brady Games / Konami 
+- Silent Hill Lost Memories (DVD) 
+Publisher: Konami 
+- Silent Hill Media 
+Url:  http://shm.silenthillfever.com/  
+- Silent Hill Heaven 
+Url:  http://www.silenthillheaven.com/  
+- Silent Hill Wiki 
+Url:  http://silenthill.wikia.com/wiki/Silent_Hill_Wiki  
+- Translated Memories 
+Url:  http://www.translatedmemories.com/  
+- Silent Hill 2 Full Game Script 
+Url:  http://uk.faqs.ign.com/articles/374/374938p1.html  
+- Andrew Rollings and Earnest Adams on Game Design 
+- Tim Ryan's ""The Anatomy of a Design Document"" 
+- VLC Player (Cut scene pictures) 
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 1 of 47  
+Last Rites Team  Version 1.5    
+ 
+ 
+PLANESCAPE CRPG  
+LAST RITES  
+TABLET OF CONTENTS  
+PRODUCT REVIEW PACK  
+7/12/07 8:25:39 PM  VERSION 1.5  
+ 
+QUICK INTRO [2]  
+To start the engine...  
+ 
+VISION STATEMENT [4]  
+All of our hopes and dreams for this project.  
+ 
+TEAM VISION  STATEMENT [16]  
+Team vision statement.  
+ 
+THE MANGY CAST [18]  
+The Last Rites  character bible and necroni micon, illuminating the dregs of humanity and  
+inhumanity who lurk in our game.  
+ 
+MANAGEMENT AND MARKETING  
+REALITIES [31]  
+The host of management and marketing realities involved in the development cycle.  
+ 
+DEVELOPMENT [35]  
+Our system for how we plan to build Last Rites . 
+ 
+DA FUCKING PLOT [43]  
+The detailed plot of Last Rites . 
+ 
+GAMEPLAY ELEMENTS [56]  
+A commentary on the Last Rites /AD&D game mechanics.  
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 2 of 47  
+Last Rites Team  Version 1.5    
+ 
+PLANES CAPE CRPG  
+LAST RITES  
+QUICK INTRO  
+7/12/07 8:25:39 PM  VERSION 1.5  
+ 
+“Only cowards die once.”  
+- Last Rites Motto - 
+ 
+ 
+O WHAT IS THIS GAME?  
+ 
+Last Rites is an isometric role -playing game that takes place in TSR’s 
+Planescape  setting.   
+ 
+It uses the Bioware Forgotten Realms engine with Interplay artists supplying the 
+Planescape ambiance and feel.  
+ 
+The player creates a single character. Over the course of the game, the player 
+picks and chooses a series of allies (pals and romantic i nterests) to join his party 
+and allow him to kick ass more efficiently. The maximum party size at any one 
+time is five.  
+ 
+O “PLANESCAPE?”  WHAT‟s THAT? A DISEASE?  
+ 
+Planescape is one of TSR’s “worlds” (like Forgotten Realms ) that uses the 
+Advanced Dungeons and Dragons (AD&D) rules system.  
+ 
+The “world” of Planescape is actually a misnomer…the Planescape setting is 
+composed of a series of “planes” (other dimensions) that rotate around a central 
+city, Sigil, like spokes on a wheel.  
+ 
+The city of Sigil is the cen tral fixture of the Planescape universe. Also called the 
+“Cage” or the “City of Doors,” it‟s unique in that scattered throughout its 
+labyrinth of city streets are portals (some hidden, some obvious) that lead to 
+anywhere  in existence, provided you have the proper key. It is neutral ground and 
+watering hole for races across the multiverse, all under the watchful shadow of the 
+Lady of Pain, the enigmatic ruler of the city.  
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 3 of 47  
+Last Rites Team  Version 1.5   Overall, Planescape is a more adult, hard -core fantasy setting compared to other 
+TSR worlds. The architecture, the people, the creatures…everything has an edge 
+to it. Belief, emotions, faith and other abstracts actually make their presence felt 
+on reality…in Planescape, belief has the power to reshape worlds, kill and 
+resurrect powers (gods) and change the laws of physics.  
+ 
+O SPECS: WHAT‟S THE TARGET SYSTEM?  
+ 
+We‟re looking at a 16MB Pentium 90 with a 2x/4x CD ROM drive and a 2 meg 
+Video Card. The game will be a multi -CD game (3 CDs).  
+ 
+ 
+ 
+ 
+  
+ This bagel -shaped thing off 
+to the right here is city of 
+Sigil. It‟s where you start 
+the game.  
+ 
+ 
+Down here‟s the 
+ground.  (Sigil‟s like a big 
+cream -filled doughnut 
+except instead of 
+cream filling, there‟s 
+this city inside. No 
+one‟s really sure how 
+they live like this, but 
+whatever. It‟s pretty 
+tame compared to 
+most of the shit you 
+find in Planescape.)  
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 4 of 47  
+Last Rites Team  Version 1.5    
+ 
+PLANESCAPE CRPG  
+LAST RITES  
+VISION STATEMENT  
+ 
+Contained herein are all the hopes and dreams for this project.  
+ 
+ 
+overview  
+ 
+O  WHAT IS THIS GAME?  
+  
+Last Rites  is a violent, irreverent and breathtakingly beautiful RPG set at the 
+crossroads of the multiverse. We intend to create an amusingly eccentric, mind -
+spinning, cliché -breaking power fantasy splashed with visceral moments of 
+breathtaking violence. The specifics of how we will accomplish this are detailed 
+in the pages to follow.  
+ 
+Set in the TSR world of Planescape , Last Rites will be using the Bioware  
+Forgotten Realms CRPG  engine as a base for the game, and Interplay artists and 
+designers will supply the Planescape ambiance.  
+ 
+The brief story summary‟s below, followed by a list of all the cool shit we plan to 
+include in the game.  
+ 
+ 
+ 
+O  THE HIGH CONCEPT  
+  
+The player is a scarred, amnesiac immortal in search of his identity. On the 
+way, the player character will kill a lot of people…including himself.  “Sheesh. Can this guy 
+write any more text? 
+I‟m already bored, 
+and I’m fucking 
+dead.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 5 of 47  
+Last Rites Team  Version 1.5    
+The game begins with the character waking up on a cold stone slab in the 
+Mortuary, a huge morgue in the city of Sigil. The player character has no idea who 
+he is, what he is doing there, and how he died. He must escape and explore the 
+strange world beyond the Mortuary walls to uncover the secret of his death and 
+rebirth.1 
+ 
+A detailed plot summary has been provided after the vision statement. Now for a 
+list of the cool features of this game:  
+ 
+ 
+ 
+COOL ENGINE SHIT  
+ 
+O  check out what‟s under the hood  
+ 
+The game engine rocks.  Our game engine has cool stuff in it that the Bioware 
+proposal has already outlined i n detail. Each map is 16 -bit color, pre -rendered and 
+unique. Characters can step into pools of light and shadow and be illuminated 
+appropriately. It has global lighting that allows the world to fluctuate from dawn 
+to noon to dusk to night and back again. When your player equips new armor or 
+weapons, you can see your character in his new duds. The 2 -click -to-whatever -
+you-need interface, over twenty quality spells and spell effects, accommodation 
+for a party of up to five characters that the player picks and chooses, and artificial 
+intelligence scripting for NPCs (the githzerai in your party will foam at the mouth 
+and go berserk on the mind flayer as soon as he sees him, your cowardly thief may 
+skip the scene as soon as first blood is drawn, the fickle traitoress in your party 
+may wait till you are at 25% hit points and everybody else has fallen unconscious 
+before stabbing you in the back) all help round out the engine.  
+ 
+O  TILing is for bathrooms, not games  
+ 
+This game engine don’t tile.  This one deserves spec ial mention since it‟s 
+probably the first thing that‟s going to hit a player.  
+ 
+                                                           
+1 The story is set up so the player character starts  out with no knowledge of the world he is in. This allows both the player and his 
+character to be introduced to the world together as they explore it and gives the player more identification with his charact er. “The point dipshit‟s trying  to 
+make is that this will be a  
+kick-ass game.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 6 of 47  
+Last Rites Team  Version 1.5   Imagine exploring a painted landscape. That‟s what this game does.  
+ 
+No more repetitious dungeon tiles used to construct generic dungeons where 
+you‟ve memorized the location of every secret button in every wall texture of the 
+cube by cube dungeon. In this game, every inch of the game world will be 
+sculpted by an artist. It‟s going be unique, and it‟s going to make our competitors 
+cry.  
+ 
+ 
+ 
+O  cool animations and humorous sfx  
+ 
+Smilin' art  style. With the art resources we can bring to bear, the creatures in the 
+game can have unique animations. Furthermore, each creature and person the 
+player meets will have sounds that give them style and character – the sniveling 
+goblinoid pimp wipes his nose when he fidgets. The apprentice spellcaster 
+practices his cantrips while waiting, little sparkles surrounding his hands and his 
+eyes glowing. Your amazonian fighter flexes and poses while she waits. The vain 
+captain of the guard combs his hair or admires himself in a mirror. During the 
+early stages of the game players can have a sarcastic floating skull, Morte, join 
+their party as a companion (his only attack is a bite and the ability to taunt 
+creatures into attacking) and he comes armed with a selection of over a hundred 
+insults he can spout off at any time (as the player enters new stages of the game, 
+the insult menu grows with each new location). When agitated or upset, he zips 
+around in a circle, his skull bobbing frantically and his eyes rolling. When near 
+female undead, he is scripted to float over them and try out pick -up lines on them. 
+When the player is engaged in delicate conversations with other characters in the 
+game, he will spin his head around like something from the exorcist or spit teeth 
+at the player.  
+ 
+Gameplay ELEMENTS  
+ 
+O  THE GAME IS THE CHARACTER GENERATOR  
+ 
+ You define yourself through your actions, not through pushing a set of 
+numbers around on the character generation sc reen.  Your actions in the game 
+flesh out the character. You decide how strong you get, which career path to 
+follow, the skills you wish to learn, what abilities you develop and what spells you “How can it not be a 
+kick ass game? I‟m in 
+it.” 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 7 of 47  
+Last Rites Team  Version 1.5   wish to study. The entire game is the character generation screen and allows you 
+to build your character to suit your gaming style.  
+ 
+O  inflict pain in ways you won‟t believe  
+  
+ 
+ 
+No more using boring swords, daggers or bows to carve bloody swaths 
+through opponents.  Plunge scalpels into foes‟ eyes, lace their food wi th 
+poisonous embalming fluid, push them into man -eating pockets of ooze, sic them 
+with sarcastic biting skulls, hurl them into razorvines, conjure burrowing rot grubs 
+within a victim‟s brain, cast spells that make them bleed from every orifice, or 
+change a person‟s scent so they attract packs of hungry rats. Deliver punishment 
+in ways that will bring a smile to your face.  
+ 
+O  SPELLS THAT MAKE YOU PITY THE TARGET  
+ 
+ “Fireball” can go hide in the fucking corner when you unleash your arsenal.  
+Jam your hand into  an opponent‟s body, rip out his soul and tell it to kill its 
+owner. Make a gesture, and summon a blanket of crawling, biting insects to turn 
+your enemy into a happy meal. Send your foes on a field trip to hell without a 
+permission slip. Taunt someone to death. Summon your darkest shadows from 
+across existence and send them into battle to feed on your opponent‟s physical 
+strength. Your succubus ally can kiss your opponents to death -- they die with a 
+smile on their face.  
+ 
+O  NO apron STRINGS  
+ 
+We don’t baby sit you...do who or what you want to when you want to do it. 
+Sure, you‟ll have direction and a goal right from the start, but you have room to 
+maneuver, explore and choose your own destiny. Last Rites  isn‟t a condescending 
+babysitter that beats you over the head with soft introductions, reassurances and a 
+hand -holding mission -spewing wizard to guide you every step of the way. It will 
+immerse you in the Planescape world and force you to fend for yourself in a 
+challenging environment.  
+ 
+Don‟t be too concerned  about dying during the first few minutes during the game 
+– it won‟t happen. You‟ll have plenty of time to explore the world around you and “These headers are stupid. 
+„Inflict Pain in Ways you 
+won‟t believe.‟ Sheesh. 
+It‟s painful enough 
+already.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 8 of 47  
+Last Rites Team  Version 1.5   get a foothold before your character is genuinely threatened. Besides, in Last 
+Rites,  death is only a temporary condition for your character. As you‟ll discover, 
+it‟s what you do after  you‟re dead that‟s important – to you and to everybody else.  
+ 
+O  equip gnarly stuff  
+ 
+Equip stuff that scares small children. Pluck out your eye with a scalpel and 
+plop in the bloody eyeba ll of a fiendish martyr. Skin a beast you‟ve slain and wear 
+it as armor – you can‟t beat the carapace of a bonespear in terms of armor or miss 
+the chance to take its horns as javelins. Harvest razorvine into garrotes. Pry open 
+the jaws of a Canoleth and carve out its sticky barbed tounge to use a net. 
+Dismember an opponent and use his extremities as weapons. Take the molted skin 
+of a giant reptile and stitch it into a shield or skin a Quill and wear its spiny fur 
+like a cloak.  
+ 
+O  hOLY SHIT, look what happ ened to me! 
+ 
+The player can have horrible, flesh -rending things happen to his character 
+on-screen – even die -- and he will get better . What happens to monsters above 
+can happen to the player – except that the player will regenerate. The player‟s arm 
+can be loped off, his legs severed, his skin flayed from his body, and he‟ll be fine 
+in a few hours (and perhaps a little stitching by the Dustmen). In some instances, 
+the player will need to lop off his own extremities for use as weapons (arms make 
+great clubs !) or free himself from manacles – he can use his deathless state to help 
+him solve problems during the adventure.  
+ 
+O  IT‟s A GAME, NOT A THIRST SIMULATOR  
+ 
+ 
+ 
+ 
+We want you to play the fucking game, not micro -manage it. This ain‟t a flight 
+sim. Because you‟re effectively immortal, you don‟t need to eat, sleep, excrete, 
+nor do you need to worry about dying through any conventional means. There‟s 
+no thirst or hunger meters, encumbrance, morality points or micro -management 
+that gets in the way of you beating a n opponent to death with his own severed arm 
+or casting a spell that teleports an opponent‟s scrotum into his stomach to get 
+digested.  
+ “The be st part about Ultima 7 
+was that you‟re guys were 
+always  hungry. There‟s 
+nothing like spoon -feeding 
+your companions to make you 
+feel like a hero. Hellloooo , 
+fun!”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 9 of 47  
+Last Rites Team  Version 1.5   But you do get to manage a party of allies – though they will always have some 
+things in their script and attitude that give them quirks that prevent them from 
+being predictable (you can give Marta the scullion a battle -axe, but since she 
+already expressed her reservations about drawing blood to you earlier in the 
+adventure, she won‟t use it in combat – although she‟s deadl y with a heavy rolling 
+pin), players still can count on being able to manage combat and fighting to their 
+liking.  
+ 
+COOL STORY SHIT  
+ 
+O  There Ain‟t a game world like it  
+ 
+ 
+ 
+Planescape  is a game world you’ve NEVER experienced before.  It gouges you 
+with its sharp -edged visuals, bizarre adversaries that can murder you with an idea, 
+and strange magics that unravel common conceptions about physics and 
+metaphysics. Explore Sigil, a city of magic and industry, barnacled within the 
+polluted interior of a hollow do ughnut where the mightiest angels and the worst 
+horrors vomited from the Pit will invite you to tender your views on how 
+mortality affects the physical and emotional relations between the sexes.  
+ 
+Forget fragile elves, rock -humping dwarves, worthless hobbits and with them, the 
+mind -numbing boredom of every RPG ever released. Planescape will leave you 
+groping for a secure foothold…and just when you think you have a feel for the 
+place, the environment will kick you in the ass, changing the rules before your 
+thoughts can tumble back into order.  
+ 
+No more high -fantasy -ride-across -the-land-and-uphold -the-good -by-killing -the-
+evil-wizard -with-the-magic -sword bullshit.  In this game, you‟re the only one that 
+matters, it‟s your life on the line…and the clock doesn‟t stop ticking.  
+ “Blah blah blah 
+Planescape blah blah 
+blah it‟s so special 
+blah blah blah we‟re 
+so pretentious blah 
+blah.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 10 of 47  
+Last Rites Team  Version 1.5   O  EGO MASTURBATION  
+ 
+ 
+ 
+We gots Gold, Glory, Power and Hero Worship.  Why save a world you know 
+nothing about and have absolutely no attachment to? Fuck that. We know what 
+you really want to do – you want to run rampant in a world where you  are a god. 
+You want the power to change your environment, slaughter all who stand against 
+you, and be a hero worshipped by the masses – everything you don‟t get pushing 
+paper or suffering through school 40 hours a week.  
+ 
+As such , Last Rites  concentrates on every player‟s power fantasy and exploits 
+selfish motivations. You and your destiny are the focus the game. You‟re not out 
+to save the world, only yourself – and if the world gets saved in the process, then 
+fine, but it ain‟t your problem.  
+ 
+Maybe Plane scape doesn‟t revolve around the character – but it would if you 
+wanted  it to, capiche?  
+ 
+O  yes, whatever you say, MASTER  
+ 
+ People recognize the character and react to him. The player can build a “rep.” 
+People will cower at the feet of a fearsome basher or else welcome (or try and take 
+advantage) of a charitable character. They will recognize him when they have 
+spoken before and will remember how the player treated them the last time he 
+spoke to them. Characters in the game will learn to fear and respect th e character. 
+They will grovel and pander to his desires, women will adore the character and 
+lavish praise upon him.  
+ 
+Sure, you may be a fat dateless loser in real life, but in Last Rites , you get the 
+women and respect you‟ve always craved.  
+ 
+ Rumors travel fast in Sigil, and the player‟s actions (however they are interpreted) 
+will herald him, and people will react appropriately.  
+ “Oooooh. 
+Masturbation. Now 
+there’s something 
+you can‟t do at 
+home.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 11 of 47  
+Last Rites Team  Version 1.5   O  a world , not A ONE -WAY STREET  
+ 
+  There’s always somewhere to go and something to do to advance the plot.  
+The adventure won‟ t grind to a halt because you can‟t solve a puzzle – just go off 
+and do something else more to your liking.  
+ 
+This theme runs through the game and carries over to scenario design and tricks 
+and traps – there is always more than one way to skin a cat for every obstacle the 
+player encounters, and should the player wish to leave a puzzle and come back to 
+it, there will always be other avenues and adventures for them to embark on.  
+ 
+ 
+ 
+O  a world with a pulse  
+ 
+Other people in the world have lives. Just because t he character isn‟t there to 
+observe every piece of the world doesn‟t mean that the world stops when he 
+leaves the area. Every person has a daily routine and events may occur without the 
+player being there to intervene or participate in them, adding to the replayability 
+value. The game will have depth and be as much of a living world as we can make 
+it.  
+ 
+O  people you meet ain‟t  from m cdonald‟s  
+ 
+People in our game have personalities – and sometimes, more than one 
+personality.  The people you meet aren‟t walki ng, talking, cookie -cutter cardboard 
+clichés that you‟ve seen a thousand times before, and they have wants  just like 
+you. Opponents and allies don‟t break down into those two simple labels, and they 
+may even switch back and forth throughout the game in response to your actions. 
+You will have to deal with adversaries with multiple personalities, schizophrenia, 
+or who have been possessed. It may be in the pit fiend‟s best interests to provide 
+you with gifts or accurate information in order to harm one of his enemies in the 
+Blood War. The friendly tavern barmaid with the flaming hair and strong sword 
+arm who percolates your hormones may be a refugee from the pits of the Abyss 
+taken mortal form. Your friends may be far more than they seem – they may 
+change their personality depending on their allegiances and your actions. One of 
+your allies won‟t take kindly you to looting bodies of the dead. Others won‟t stick 
+with you except out of greed. Some smiling faces conceal fangs waiting for a 
+combat when your back is a gainst the wall to turn on you.  “We were initially worried that 
+a game with a severed head in it 
+wouldn‟t sell. So we said, „well, 
+Interplay might go for it,‟ so 
+here we are.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 12 of 47  
+Last Rites Team  Version 1.5    
+On the other hand, the player can build friendships and relationships. He can build 
+trust with skeptics, help out those in need, or romance those he meets. We will 
+work hard to try and include positive relationships within the game – relationships 
+that the player may not have in real life or may desire from watching movies. The 
+player can have buddies that will lay down their life for the character, Betsies and 
+Veronicas/Gingers and Mary Anns fighting over his affections, me ntors, loyal 
+servants, and so on. They will thank the player for his help or fawn for his 
+attention, giving the player additional ego -stroking.  
+ 
+ 
+ 
+ 
+O  horns of a dilemma THAT are sharp  
+ 
+Difficult moral choices that make you think and have consequences . Most 
+fantasy RPGs have right and wrong choices, and more often than not, the morality 
+is always  clear cut. You do something for the “right” reason and you get a scrap of 
+information or a reward. Isn‟t that nice?  
+ 
+It‟s predictable and stupid. In Last Rites , life (and unlife) ain‟t going to be that 
+simple.  
+ 
+There are no “right” and “wrong” courses of action – more often than not, there 
+are two wrongs or two rights, and each choice will insure that someone  gets the 
+short end of the stick. You may need to steal, rob corpses or kill to survive. In 
+order to accomplish a greater goal, innocents may pay the price. Freeing a 
+seemingly wronged prisoner from the Prison may bring a rash of serial killings 
+that the Harmonium can‟t stop. Saving a little girl from a gang o f young hoods 
+may be interrupting a gang initiation ritual. Giving food to a disease -ridden beggar 
+from starvation may cause 20 other people to die from the plague. Not everything 
+everyone says is true, and actions don‟t necessarily betray a person‟s goals. A 
+“kindly” wizard has his own interests at heart and a poisoned dagger hidden in his 
+sleeve. The traitor in your midst may have reasons for his actions that make 
+perfect sense to you even while he has the dagger at your throat. A horsetrader 
+may sell you  a mount for every bit of jink you have all the while knowing that it‟s 
+likely to die on you five minutes after it goes out onto Sigil‟s pollution -encrusted 
+streets. Trusting the carefully -worded argument of an angel over the blunt, fiery 
+words of a hideous Pit Fiend may be the biggest mistake of your life.  “Sometimes I wonder 
+why my e yeballs 
+don‟t dry out.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 13 of 47  
+Last Rites Team  Version 1.5    
+O  something big is going down  
+ 
+   
+  
+ 
+You’re out to save yourself, but the ramifications of your life or unlife affect 
+everything else.  Sure, you‟re just one guy, but this don‟t mean that you are a 
+small fish in a big pond. You‟ll soon find that everyone wants to kill you, befriend 
+you, betray you, worship you, and they all have pretty damn good reasons for 
+doing so that go beyond you and your immediate wants. You are someone of 
+legend, power and potential, and what you do will send earthquakes through the 
+planes. It‟s all about you, you, you.  
+ 
+O  hamlet had IT easy  
+ 
+We got the biggest puzzle a game’s ever had: you.  No more switches, no more 
+finding red/blue/yellow key, no more pressing buttons in the p roper sequence. We 
+got the biggest mystery yer gonna find. To win the game, you‟ll need to find out 
+who you are, who murdered  you, and why. If you don‟t, you‟ll be a slave to the 
+Powers for the rest of your unlife.  
+ 
+O  YOUR INVENTORY TALKS TO YOU  
+ 
+Items with attitude: Items will be more than items. They will have individual 
+pictures, histories, names – and by doing research, players will be able to discover 
+that their weapons do more than is first apparent.  
+ 
+Some of your weapons yodel, get jealous, and ar e even cowardly when drawn 
+from their sheaths. Some require a stern talking to, others bullying, and some are 
+good just to talk to when you get stuck or need a sounding board.  
+ “I‟ve got your BIG 
+right  here.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 14 of 47  
+Last Rites Team  Version 1.5   O  “babes,” as in, “TRUCKLOADS OF.”  
+ 
+ 
+ 
+Tons of Total Babes: This game will have lots of babes that make the player go 
+“wow.” There will be fiendish babes, human babes, angelic babes, asian babes, 
+and even undead babes. These babes will be present without nipple -age and will 
+all regrettably behave within the TSR Code of Ethics.  
+ 
+O  Pike yer jink. WHAT D‟YA KNOW , BERK?  
+ 
+Information Driven Quests: Most of the “currency” in this particular Planescape 
+game is not jink -driven. The player will discover that it‟s what he knows and what 
+he chooses to tell others is the real form of barter in the world of this game. Jink is 
+good for buying Arborean sweet squash, but knowing the dark of Shemska the 
+Marauder‟s current plans will get the player into places that jink otherwise 
+wouldn‟t.  
+ 
+O  An interface so alive, you fear it  
+ 
+A Living Interface: An interface that is alive with animated icons and animated 
+screens. Screens that change according to how powerful you are and what you 
+have equipped.  
+ 
+O  and more babes  
+ 
+Babes: Think babes. Then think more babes.  
+ 
+O  IT DOESN‟T STOP WITH THE GAME  
+ 
+Welcome to Planescape…stay for a while: Last Rites  is designed to be an 
+immersive introduction to Planescape. The player and his character are dumped 
+into a strange world where both of them must decipher the bizarre cultures, people 
+and laws that now govern their  lives (and un -lives). The player and character 
+experience the world together as the game advances, without the player having to 
+force himself into a role where his character is assumed to already have a 
+connection with the world and its people as many role -playing games do ( Anvil of 
+Dawn , Thunderscape, Lands of Lore ). The monsters, history, locales and “I don‟t wear pants! 
+Now, that’s 
+entertainment.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 15 of 47  
+Last Rites Team  Version 1.5   experiences should prove new to both the player and his character, making the 
+role-playing experience that much more immersive and powerful.  
+ 
+By the end of the game, we hope to give the player an overall feel for Planescape 
+and what guides it without detailing every corner of the world. It is hoped that the 
+game and the area and people it presents will serve as a foundation for future 
+games and will hopefully spur a gamer to read the paper game support material 
+and the novels themselves in search of more information touched upon in the 
+game (especially certain factols, the Blood War, powers and areas on the Outlands 
+that they heard about in passing, but did no t encounter in the game).  
+ 
+In essence, as many aspects of the world of Planescape will be touched upon as 
+possible, enough to give the feeling of a well -rounded universe, but only certain 
+facets will be explored in detail. It is hoped that the touches will help set the stage 
+for future games and spark player interest in both future games and TSR support 
+material.  
+ 
+“This is what I would 
+look like if I was 
+punched in the face.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 16 of 47  
+Last Rites Team  Version 1.5    
+ 
+PLANESCAPE CRPG  
+LAST RITES  
+TEAM VISION STATEMENT  
+ 
+Contained herein is the vision for the team.  
+ 
+ 
+O TEAM VISION STATEMENT  
+ 
+O  don‟t do what‟s  been done . 
+ 
+If you’ve seen it done before, do it better than you’ve ever seen or don’t do it. 
+Better yet, try to think of a way to implement it that has never been tried 
+before.  
+ 
+O  THIS is Planescape, not high fantasy  
+ 
+This is not high fantasy. This is avant -garde fantasy. Everything you create or 
+draw should reflect this.  
+ 
+O  It‟s a spiky and jagged world…  
+ 
+Planescape is spiky and jagged. It does not look like a soft, comfortable place to 
+live. Don‟t think Ultima  towns or feudal farmsteads – think of th e jagged teeth of 
+a shark or the spines of a porcupine when considering architecture.  
+ 
+O  …filled with jagged and spiky people  
+ 
+The people in Planescape are spiky and jagged. They don‟t look like soft 
+medieval peasants.  
+ 
+O  re-examine your first instinct  
+ 
+If you want to create something, don’t use your first instinct . Stop for a 
+moment, then put a spin on the idea. For example, don‟t draw a “sailing ship” 
+as a modern day person would recognize it. Replace the sails with cobwebs, the 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 17 of 47  
+Last Rites Team  Version 1.5   wooden hull with the ri bcage from some demonic beast, give it the ability to travel  
+underwater in an air bubble, and so on.  
+ 
+O  go nutty  
+ 
+Go crazy. If you‟re not excited about an idea, make it exciting. Make it something 
+you have to wrestle with, not just crank it out because you‟ve done it the same 
+way a million times before.  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 18 of 47  
+Last Rites Team  Version 1.5    
+ 
+PLANESCAPE CRPG  
+LAST RITES  
+CHARACTER BIBLE  
+7/12/07 8:25:39 PM  VERSION 1.5  
+ 
+“Good. Bad. Us. Them.”  
+- Summing it up  - 
+ 
+ 
+B.0 vision STATEMENT  
+ 
+This section visually and  psychologically summarizes the good guys (or at 
+least the guys that are less bad than the guys you‟re stomping on) slated to 
+appear in our game.  
+ 
+B.\1 BIBLE SUMMARY  
+ 
+The art in this bible contains concept sketches from Eric Campanella and 
+James Lim.  
+ 
+ “Wandering through this  
+SCREWED -up world is  
+like having  
+amnesia and DEJAVU  
+at the same time...there‟s  
+always the damnedest feeling  
+that I've forgotten  
+this all before.”  
+      
+- the nameless one - 
+ 
+ 
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 19 of 47  
+Last Rites Team  Version 1.5    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+“If there‟s some higher Power  
+ that controls my fate, I would  
+like to meet him, shake his hand, 
+then crack open his ribcage and 
+tear out his heart.”  
+ The “hero” of the piece:  
+aka, “the nameless one,” “The Restless One,” 
+“The Deathless one,” “The lost one,” “the 
+walking scab”  
+ 
+Our Seemingly -Immortal, Horribly Scarred (Physically and Emotionally) Amnesia -Ridden Protagonist. 
+This is the brutally scarred puppet that the player uses to interact with the Planescape world. This walking scab 
+can‟t die, which insures hours of deathless (but not painless) gaming enjoyment. His most notable bullet points is 
+his scarred, corpse -like appearance, his ability to shrug off traumatic damage and de capitation, and his inability 
+to remember who or what he is.  
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 20 of 47  
+Last Rites Team  Version 1.5    
+MORTIMER “MORTE” 
+RICTUSGRIN  
+ 
+ 
+Morte’s a floa ting, sarcastic skull that was so abrasive his own body walked off and left him.  Morte is 
+the player‟s first ally in Last Rites . He‟s a floating sarcastic skull that helps the character out by answering 
+questions about the Planescape universe, insulting other NPCs, and hitting on female zombies. He‟s 
+basically a bitter, abrasive sounding board (and cluebook) for the character. He has a tendency to bite 
+people he doesn‟t like.  
+ 
+“IT‟s YOU AND ME, BERK – WE‟RE IN THIS 
+TOGETHER. UNTIL THIS THING‟S OVER, I STICK 
+LIKE YOUR LEG.”  
+ 
+- morte - 
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 21 of 47  
+Last Rites Team  Version 1.5   
+ ANNAH  
+ 
+Annah’s a smoldering young 
+tiefling that speaks with an 
+Irish accent. She’s brash, 
+insulting and inexpressibly 
+attracted to the player 
+character.  
+ 
+A tiefling raised on Sigil‟s 
+streets, Annah‟s a lot like one 
+would expect from a Hive 
+orphan. Streetwise, and not 
+terribly patient where most 
+matters are concerne d, Annah 
+has difficulties in affairs of the 
+heart. Feelings beyond simple 
+hostility make her terribly 
+confused, hesitant and 
+frustrated.  
+“Ach, YA CLUELESS „TARD! MAYBE IF YA‟D THINK 
+BEFORE YA OPENED YER BONE BOX, MAYBE YA 
+WOULDN‟T FIND A SWORD STICKING BETWEEN 
+YER RIBS SO OFTEN!”  
+ 
+- ANNAH, EXPRESSING HER AFFECTION - 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 22 of 47  
+Last Rites Team  Version 1.5    
+Dak‟kon THE PARIAH  
+ 
+ 
+An exile from a race of exiles. Like 
+most githzerai, Dak‟kon looks like 
+an elf gone bad – he‟s bedecked in 
+grays and browns, and his hairless 
+liver-spotted yellow skin makes him 
+look like he took a bath in mustard. 
+Somber, honorable, and fiercely 
+loyal to the hero, Dak‟kon will stick 
+with him throughout the adventure 
+and do everything in his power to 
+protect him.  
+ 
+“Where you go, I SHALL FOLLOW. YOUR ENEMY 
+IS MY ENEMY. YOUR STRUGGLE, MY STRUGGLE. 
+KNOW THAT WHEN OTHERS FALL, I SHALL 
+REMAIN BY YOUR SIDE UNTIL THE BLOOD STOPS 
+BEATING IN MY HEART.”  
+ 
+- DAK‟KO N THE PARIAH - 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 23 of 47  
+Last Rites Team  Version 1.5    
+FALL-FROM-GRACE 
+ 
+A puritan succubus with the wealth of a thousand experiences in her head. Sold into slav ery 
+by her abyssal mother, Fall -from -Grace spent many long centuries in servitude to various masters 
+across the Planes. She won her freedom in a contest of improvisation and promptly fled to Sigil, 
+where she became the hostess of the Brothel for Slating Intellectual Lusts . Her intense dislike of 
+her succubus mother has caused Fall -from -Grace to forsake all sexual contact and innuendoes, 
+seeing them as contemptible qualities.  
+ 
+ 
+“HER EYES WERE LIKE WINDOWS TO HELL, 
+BUT SHE HAD A BODY THAT MADE ME WANT 
+TO KIC K IN THE DOOR.”  
+ 
+- MORTE - 
+ 
+  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 24 of 47  
+Last Rites Team  Version 1.5    
+ 
+ 
+ 
+ 
+ 
+Nordom Whistleklik  
+ 
+A book -smart metal cube with arms, legs, big eyes and a voice like a Speak -and-
+Spell on crack. A clunky mechanical cube with arms, legs, and large expressive eyes 
+(that usually register only confusion), Nordom is a rogue modron from Mechanus. He is a 
+straight man for many jokes and the ultimate puzzle -breaker for any conundrum the 
+player encounters. He acts like a cubic R2D2 unit that speaks bad English.  
+ 
+ 
+“Nordom. It rhymes with „boredom.‟ Next 
+time, we sh ould hire a cash register or a 
+toaster to help us out instead.”  
+ 
+- morte - 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 25 of 47  
+Last Rites Team  Version 1.5    
+VHAILOR  
+ 
+A suit of Mercykiller armor inhabited by the ghost of a dead Sigil cop. Start with a 
+“Nazgul,” slap some tank armor on it, add a voice that sounds like it‟s coming from within 
+a boiler, and you have Vhailor. An intricate (and frightening) suit of armor haunted by the 
+spirit of its own er, Vhailor‟s devotion to justice was such that he refused to die until the 
+sentences of all who had committed crimes during his lifetime were punished. Kept alive 
+only by his devotion to justice, the armor will serve the character and help him reach his 
+goals…as long as it does not interfere with Vhailor‟s own goals.  
+ 
+ 
+ “I HAVE WAITED MILLENIA TO DISPENSE 
+JUSTICE. I WILL WAIT ANOTHER MILLENIA TO 
+SEE THE SENTENCES OF THE CONDEMNED 
+CARRIED OUT.”  
+ 
+- VHAILOR - 
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 26 of 47  
+Last Rites Team  Version 1.5    
+ 
+ 
+PLANESCAPE CRPG  
+LAST RITES  
+NECRONIMICON  
+7/12/07 8:25:39 PM  VERSION 1.5  
+ 
+Wherein the bad people in the Planescape game are summarized for those  
+that do not wish to be bored to death by reading stupidly long character histories.  
+ 
+ 
+ 
+B.0 vision statement  
+ 
+This document summarizes the dickheads (the adversary dickheads, that 
+is) in our game both visually and psychologically.  
+ 
+B.1 necro summary  
+ 
+These are the bad guys in our game. They‟re bad people. Some of them are 
+the same as the player‟s allies, just to confuse the is sue. Who can you 
+trust?  
+ 
+  
+he will come.  
+ 
+he will bring allies.  
+   
+He will CONFRONT  
+me, realize the futility of  
+his quest, and die.  
+ 
+Then the  
+cycle will begin again.  
+      
+- The TranscendenT one - 
+ 
+ 
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 27 of 47  
+Last Rites Team  Version 1.5    
+ 
+ 
+ 
+ The 
+TranscendenT one  
+The antagonist is the player…or, 
+more precisely, a part of the player 
+that was split from him a long time 
+ago. This is the player‟s hidden 
+adversary who has been mur dering 
+the player repeatedly for almost a 
+century and watching him rise from 
+the dead as an amnesiac.  
+ Our Capable, Condescending, 
+Calculating and Insufferably 
+Arrogant Antagonist who has it all 
+figured out.  
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 28 of 47  
+Last Rites Team  Version 1.5    MANTUOK  
+“THE VOICE -OF-MANY”  
+ 
+A wererat lawyer -wizard that serves as a mouthpiece for a hive mind of cranium rats. Take Gol lum 
+and/or Smigal Wormtounge from Lord of the Rings , add a peculiar brand of lycanthropy that allows him to 
+change into a giant humanoid rat, and you have Mantuok. A sniveling, ob sequious diplomat for the hive of 
+cranium rats that live in the Weeping Stone catacombs, Mantuok makes up for his various physical 
+deficiencies with his magical prowess and social backstabbing skills.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+“Why have you come TO OUR KINGDOM, 
+human? This is not A PLACE for MaN…  
+no PLACE for man at All .” 
+ 
+ManTUOK, THE VOICE -OF-MANY  
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 29 of 47  
+Last Rites Team  Version 1.5     
+ 
+RAVEL  
+PUZZLEWELL  
+ 
+A batty, lecherous Night Hag that tinkers with arcane abstracts. Ravel is imprisoned in an 
+extraplanar barbed -black maze for conducting arcane research that threatened Sigil. Obsessed with 
+the idea that the Lady of Pain is herself a prisoner in Sigil, Ravel was promptly hurled into a prison 
+of her own midway through her attempt to “free” her. Gifted with the ability to fashion artifacts 
+endowed with bizarre abstract powers, Ravel was responsible for peeling the player‟s mortality 
+from his body and leaving him the immortal wreck he is today. Ravel is tremendously powerful but 
+slow to anger…the player‟s main challenge will be finding a way to politely fend off her lustful 
+advances while picking her brain for information.  
+ 
+   
+“MY PRETTY THING, I CAN TRAVEL THE 
+PLANES, BUT I CANNOT CHANGE THE 
+NATURE OF MAN.”  
+ 
+- RAVEL, TAPPING HER FINGERTIPS LIKE 
+MANDIBLES - 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 30 of 47  
+Last Rites Team  Version 1.5    
+ 
+ 
+ 
+ 
+ 
+ 
+  
+TRIAS THE BETRAYER  
+A deva who  betrayed the Upper Planes to the Blood War.  Trias is a political 
+“visionary” who sought to stir the Upper Planes (heaven) to take a more active role in the 
+Blood War by helping a legion of fiends attack Elysium. He felt a fiendish attack close to 
+the Elysium‟s heart would force the devas to abandon their behind –the-scenes 
+manipulation of the Blood War and invade the Lower Planes.  
+ 
+The player encounters Trias in the prison town of Curst, where he is attempting to gain new 
+recruits to his cause.  
+ 
+“IF ONE T RULY BELIEVES IN A CAUSE, ONE  
+MUST BE WILLING TO BETRAY IT.”  
+ 
+- TRIAS THE BETRAYER - 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 31 of 47  
+Last Rites Team  Version 1.5    
+ 
+PLANESCAPE CRPG  
+LAST RITES  
+MANAGEMENT AND  MARKETING 
+REALITIES  
+7/12/07 8:25:39 PM  
+ 
+Contained herein is the host of realities of management, scheduling and marketing.  
+ 
+ 
+.357 BULLET POINTS  
+ 
+Aside from anything you want to pry out of the vision statement with a crowbar, some of 
+the more obvious bullet points of this game are (in no particular order):  
+ 
+ This is the first computer game set in TSR’s Planescape setting.  
+ 
+ The strengths of this world are, if you need to tell anyone:  
+ 
+ It’s hard -core adult fantasy. It use s the AD&D rules, but everything‟s got teeth, 
+from the architecture, to the locals, to the monsters, to the spells. It‟s got a flavor 
+all its own.  
+ 
+ It’s a world of countless dimensions and creatures. Any other fantasy game world 
+is nothing more than a drop in the ocean compared to the expanse of Planescape. 
+You can go anywhere and do anything.  
+ 
+ Interplay is the only company ever to have this license. The exclusiveness could 
+be played up to reviewers and magazines.  
+ 
+ Features.  As it stands, we‟re looking a t about 40 different creatures (a number of 
+them are humans, but it might be best not to mention that), about 20 quality spells, 
+and 70+ weapons and armor you can customize …this creates an almost endless 
+selection of items the player can use.  
+ 
+ Non-tileable settings.  The locations are breath -taking…hopefully, the product 
+review today will convince you of the strength of this point.  
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 32 of 47  
+Last Rites Team  Version 1.5    Shadow and colored lighting effects. When the player walks into a shadowed 
+area or an area of colored light, it changes the cha racter‟s look to reflect the 
+lighting. A player walking through an area lit by stained glass will look like a 
+humanoid rainbow as he steps through it.  
+ 
+ Motion -capture characters.  The fluidity of the character‟s movement with be 
+apparent in the first few seconds of the game.  
+ 
+ The character is immortal and has powers that no character in any role-
+playing game has ever had. You‟ve never played a character like this one. Your 
+character is immortal . He can regenerate. He can lose limbs. He can talk to the 
+dead. He can cut off extremities and replace them with others he finds. He‟s like a 
+tougher version of Frankenstein.  
+ 
+ Your items have personality. Some of them even talk to you. In the game, the 
+player comes across new party members that sit in his inventory. Cowardly 
+swords, hate -filled axes and slow -witted yodeling hammers all can have 
+conversations with the player and throw in their two cents when they have 
+something to say.  
+ 
+ Your companions in the game.  The uniqueness of the companions the player can 
+discover  in the game can also be played up to differentiate from other computer 
+games…a smart -assed sarcastic floating skull, a teen -aged demon -girl with a 
+lashing tail, a puritan succubus, a talking speak -and-spell cube, a self -exiled 
+samurai, a pyromaniacal mage that is a living conduit to the elemental plane of 
+fire, and a suit of living armor can all join your party.  
+ 
+ 
+ 
+ 
+ “Of all the player‟s companions 
+though, Morte, the floating 
+skull, is the best.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 33 of 47  
+Last Rites Team  Version 1.5    
+PLANESCAPE CRPG  
+LAST RITES  
+DA FUCKING PLOT  
+7/12/07 8:25:39 PM  
+ 
+“You mean I got to go all through this shit to get to the end? Fucking designers! I’d sooner die a 
+thousand deaths than --” 
+- Our hero, the Nameless One, finally catching on  - 
+ 
+ 
+WHAT‟S THE GOAL OF THE GAME?  
+ 
+You are a large, fleshy puzzle box with several locks. Find the keys.  
+ 
+You wake up from the dead with amnesia.2 The point of the game is to find out where 
+you are, who you are, how you died, and what the future holds in store for you. If it means 
+putting a bunch of people in the dead book, so be it.  
+ 
+At its core,  Last Rites is a mystery, with the character as the enigma. Throughout the 
+game, curiosity, greed, fear, a need to escape, survival, self -defense and revenge will all 
+take turns driving the character toward the grand finale, but ultimately all of these 
+motivations revolve around finding the answers to the following questions:  
+ 
+Who am I?  
+ 
+Who keeps trying to kill me?3 
+ 
+Why am I immortal?  
+ 
+Learning the answers to these questions can give the player character tremendous power 
+over his destiny. It may also mea n dying a lot. But fate is a fickle mistress…  
+                                                           
+2 Amnesia is also designed to give the player more identification with the character. The shock of Sigil and the outer planes w ould be 
+diminished if the player character was assumed to know the workings  of the multiverse. The PC‟s amnesia is also used to create more 
+character -driven puzzles than plot -driven (more of “who am I/was I” puzzles than “what should I do” puzzles).  
+3 And why aren‟t they doing a very good job?  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 34 of 47  
+Last Rites Team  Version 1.5   REINCARNATION AND AMNESIA MAKE STRANGE 
+BEDFELLOWS  
+ 
+What can you say about a game with reincarnation and amnesia as plot devices?  
+ 
+The player quickly discovers it is almost impossible for him to die.4 He regenerates from 
+traumatic damage, shrugs off stab wounds, and becomes a close friend of fast -developing 
+scabs and blisters that harden and fall off within minutes.  
+ 
+The problem is that every time the player dies, he “forgets” everything his previous 
+incarnati on knew. Or thought it knew. This is extremely frustrating.5 
+ 
+Combining the character‟s amnesia with his ability to rise from the dead, a whole bunch 
+of questions come to mind. What has he done in previous incarnations that affect the 
+present? What pleasant or unpleasant events have occurred in Sigil and the outer planes 
+that he is responsible for? And the most important question: What led him to this state? 
+How did this happen? (Many other people are also interested in this question.)  
+ 
+As the player will d iscover, many have been touched by his actions in the past, in the 
+present and the future. What the player has forgotten, they have not.  
+ 
+ THE START: THE MORTUARY  
+ 
+The player wakes up on a cold slab in a room piled with dead bodies. He has no memory 
+of who he is or what he‟s doing there.  
+ 
+As the player crawls off the slab, a skull6 on a nearby table introduces itself. The skull, 
+Morte , calmly informs the player he‟s in the “Mortuary,” a huge morgue in the city of 
+Sigil. He also mentions that if the Dustmen (the Mortuary caretakers) find out the player 
+“woke up” after dying, they‟ll probably toss him in the crematorium. This would be bad.  
+ 
+Morte will help the player escape…that is, as long as the player helps him. (The player 
+cannot leave the Mortuary without Morte.) From then on, the sarcastic floating skull will 
+be his near -constant smack -talkin‟ companion.  
+ 
+                                                           
+4 Another plot device. This one allows the player to regenerate while walking around, and it also allows him to explore Sigil a nd the 
+outer planes with a safety net. (The net is not foolproof – cremation/disintegration, imprisonment, and the Lady of Pain are all things 
+that the player still needs to watch out for.) Plotwise, it presents the player with a series of puzzles involving earlier incarnations and 
+their actions.  
+5 Anytime the player dies during Last Rites , however, he will not lose his memory. A previous incarnation found a means to 
+temporarily prevent the amnesia to give the player a chance to find his adversary.  
+6 The skull is the player‟s first “ally,”  Mortimer “Morte” Rictusgrin , a sarcastic floating skull. He floats alongside the character for 
+most of the adventure, being a smart  ass and talking a lot of smack with the PC and his allies.  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 35 of 47  
+Last Rites Team  Version 1.5   Sigil‟S SLUMS: THE HIVE  
+ 
+The player escapes the Mortuary and finds himself on the streets of Sigil‟s slums (the 
+Hive) after dark…not a good place to be . Once outside, Morte happens to mention that 
+the player comes with a handy list of “instructions” tattooed on his back.  
+ 
+The Tattoos stitched on the character’s back tells him he has three goals:  
+ 
+ Find someone named “Pharod” who knows something about his condition.  
+ 
+ Find some “journal” that was supposed to be with his body (but seems to be missing).  
+ 
+ Find out how he died/who killed him.  
+ 
+ 
+   
+  
+ 
+ “Throughout the game, I 
+dispense advice, abuse, and 
+even hints when the player 
+asks. I keep track of wh at the 
+player‟s learned and what he‟s 
+forgotten. I‟m a skull, a 
+compass, an encyclopedia, and 
+the player‟s best friend.”  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 36 of 47  
+Last Rites Team  Version 1.5    
+ 
+PHAROD: RAGPICKER‟s SQUARE AND BELOW  
+ 
+The player goes in search of “Pharod” who apparently knows someth ing about him. 
+Pharod is the wheezing, asthma -ridden chief of a gang of scavengers. He has set up his 
+kip in a city block that lies buried beneath a mountain of trash called “Ragpicker‟s 
+Square.”  
+ 
+The player must find Ragpicker‟s Square, dig out the entrance to Pharod‟s buried village, 
+then find a way to trick/defeat Pharod‟s guards in order to meet Pharod himself.  
+ 
+Pharod says he will help the player if the player loots one of the crypts in the Weeping 
+Stone Catacombs . If the player reveals he has “forgo tten himself,” Pharod bleeds the 
+player for as much money and favors as he can wring out of him.  
+ 
+WEEPING STONE CATACOMBS  
+ 
+The player enters the Weeping Stone Catacombs as a “favor” for Pharod. The player 
+enters the catacombs beneath Sigil. Here he discovers a civilization of living dead and a 
+hive of intelligent rats that exist in a shaky truce…a truce the player‟s presence could 
+ RAGPICKERS  
+ 
+SQUARE  
+“The „square‟ was a mountain range 
+of junk and cloth, mortared together 
+with pigeon crap. Collectors had built 
+platforms atop the mountains and 
+hollowed out nests in the trash. They 
+picked at the rag mountains like flies, 
+buzzing to themselves when they 
+came across a promising piece of 
+garbage.”  
+ 
+Nameless One,  
+Chapter of Dust  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 37 of 47  
+Last Rites Team  Version 1.5   break if he is not careful. The player must either fight all the inhabitants, fight for one of 
+the two groups, or sneak through the catacombs, get what he needs, then get out.7  
+ 
+It turns out that the crypt that Pharod wants the player to loot is the player’s own tomb .8 If 
+he can navigate the deathtraps one of his previous incarnations placed there, he can return 
+the object that Pharod wants and also gain some information, weapons and clues to his 
+immortality. He discovers that his attempted murderer is some asinine being called the 
+Transcendent One , who seems to have been hunting the player across the span of 
+several centuries.  
+ 
+Once the player returns to Pharod with the item, Pharod (somewhat impressed) tells the 
+player where his dead body was first discovered (the haunted “Alley of Lingering Sighs,” 
+below).  
+ 
+ALLEY OF LINGERING SIGHS  
+ 
+Following Pharod’s directions, the player comes to the alley where his “corpse” was 
+found. The alley happens to be alive and pregnant.  The alley has the mentality of a 
+retarded child, but it can give the player some  clues about how he died. During the 
+conversation, the alley happens to mention it is “ pregnant.” It is afraid that it will be 
+discovered by the Harmonium (Sigil‟s cops) and be destroyed before it can give birth.  
+ 
+Unfortunately, the player‟s recent murder has drawn a group of Harmonium guards to the 
+area to investigate the killing. If the player protects (hides) the alley from the Harmonium 
+(by distracting or killing them), it will have the time it needs to give birth. This birth 
+results in the spontaneous generation of several new streets, lightpoles, and a portal the 
+player can use to advan ce to the next scene.  
+ 
+BROTHEL FOR SLATING INTELLECTUAL LUSTS  
+ 
+Beyond the living alley the player enters Sigil’s upper class district -- and stumbles 
+across a brothel that caters to customers who seek anything but sexual gratification. 
+While in the Clerk‟s Ward,  the player comes across a brothel that caters to those seeking 
+intellectual gratification. If the player survives all the intellectual challenges posed by the 
+attractive ladies in this house of verbal ill repute, he can ask the hostess, a beautiful 
+succubus named Fall-From -Grace , to join his party.  
+                                                           
+7 The player‟s actions here may cause problems later…the player has to return to these catacombs later on in the adventure and must 
+deal with the residents again.  
+8 One of the player‟s previous incarnations had the tomb built to as a trap for his killer (and failing that, at least try and throw his 
+killer off the scent). It didn‟t work.  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 38 of 47  
+Last Rites Team  Version 1.5    
+ 
+ 
+ 
+ 
+SIEGE TOWER: THE STEEL TIERS  
+ 
+A battered siege tower sitting in the middle of Sigil’s upper class ward hides an 
+exclusive weapons shop. “The Steel Tiers” is  a huge siege tower that lies in the Market 
+Ward. It is actually a weapons shop run by an iron golem whose only purpose is to create 
+and enhance weaponry. The player may buy strange weapons from him, identify weapons, 
+or ask him to enhance weapons they already possess.  
+ 
+The purpose of this area  is to allow players to customize their own weapons and armor. 
+They can modify weapons they like to use and give the weapons abilities more suited to 
+their style of play.  
+ 
+ THE STEEL TIERS  I protect entropy’s righ t to exist,  
+the golem intoned, its metallic voice 
+ringing like steel in the hollows of the 
+battered siege tower. If necessary, I 
+shall breach the walls of creation to 
+free Chaos from the chains of 
+Order.  
+ 
+The tower itself was a magnificent 
+mosaic of corrosive burns, rends, and 
+torn metal, scars of countless wars 
+across countless dimensions. I pitied 
+all that had tried to stand against it 
+and hoped that I would never be 
+counted among their number.  
+ 
+Nameless One,  
+Chapter of the Ring  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 39 of 47  
+Last Rites Team  Version 1.5    
+THE BLACK -BARBED MAZE  
+ 
+From the upper class ward, the player finds a portal to a Black -Barbed Maze 
+inhabited by a lusty old crone who resembles a plump, asthmatic Weez Dugan. After 
+his experiences at the brothel and other sections of Sigil‟s upper class district, the player 
+transports to the Black -Barbed Maze, a maze composed of twis ted black trees. The maze 
+holds a single resident: a hideous old crone, Ravel, who is rumored to know something of 
+his past and his future. The player must track down Ravel and pry the information from 
+the crone while fending off her lecherous advances.  
+ 
+Ravel informs the player that he is immortal because his mortality was split from him (as 
+a matter of fact, Ravel is the one who performed the ritual in the first place). She claims 
+that his mortality is imprisoned and recommends the player go to the priso n-city of Curst 
+to look for it.  
+ 
+Ravel cannot remember why the player and his mortality were split. She claims there was 
+some reason for it, but she can‟t recall what it was.  
+ 
+ “Serrated black growths g rew from the walls of the maze and tore at our clothes 
+as we passed. The blackened branches that wove the floor and walls of the 
+maze seemed to shift slightly out of the corner of our eye, and we took care not 
+to linger within the shadows of the roots for too long.”  
+- The Nameless One, Chapter of the Mad  - THE BLACK -BARBED MAZE  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 40 of 47  
+Last Rites Team  Version 1.5   
+ 
+ 
+PRISON GATE -TOWN OF CURST  
+ 
+Welcome to the prison town of Curst. Once inside the gates, you’re an inmate. The 
+player arrives in Curst in search of information. While there, he becomes acquainted with 
+the gang of criminals, politicians and backstabbers that live there. In the depths of the 
+Curst jail, he discovers Trias the Condemn ed, a deva9 who has been imprisoned by the 
+Curst officials. If the player frees him, Trias tells the player there is a fiend on the 
+Outlands that could help the player reach Baator (Forked -Tounge, below).  
+ 
+While the player is gone from Curst, Trias (who is really quite a bastard past his angelic 
+aura) proceeds to cause all sorts of trouble that results in the town sliding off its plane of 
+existence. When the player returns to Curst, the city will be gone.  
+ 
+                                                           
+9 Devas are the Planescape equivalent of angels.  Prison town  
+of  
+CURST  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 41 of 47  
+Last Rites Team  Version 1.5   
+ 
+ 
+FORKED -TOUNGE‟S CRATER  
+ 
+With help from Trias,  the player comes to the home of a charitable fiend. The player 
+comes to the home of Forked -Tounge, a Baatezu10 hermit that lives in a huge blasted 
+crater on the Outlands. Many centuries ago, Trias suckered Forked -Tounge into signing a 
+contract that would force him to tell the truth and perform acts of charity for the rest of 
+his life. This contract was such a death sentence to the hate -filled fiend that he left Baator 
+and set up his kip on the Outlands.  
+ 
+Forked -Tounge (gritting his teeth as he gives somethi ng for nothing) provides the 
+character with the location of a portal and a portal key that will take him to the Pillar of 
+Skulls, a location that should finally be able to answer all the questions the player has 
+about his condition.  
+ 
+                                                           
+10 A “baatezu” is the Planescape equivalent of a devil. The rea son they don‟t just use “angel, devil, heaven” and “hell” is so they don‟t 
+give various religious groups any (more) ammo for lawsuits or crusades.  FORKED -TOUNGES  
+CRATER  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 42 of 47  
+Last Rites Team  Version 1.5    
+ 
+ 
+BAATOR: A CHAT WITH THE PILLAR OF SKULLS  
+ 
+The player steps through the portal to Baator (“hell”) and has a chat with a pillar of 
+canny living heads. The pillar is a huge, chattering composite of living heads of all 
+advisors, sages and consultants that have lied during t heir lifetimes. As punishment, they 
+ DA  
+PILLAR  
+of 
+SKULLS  
+“More terrible than their howls, shouts and 
+bellowing was the deathly silence as the living 
+pillar finally noticed our presence. ” 
+ 
+The Nameless One  
+Chapter of the Infinite Planes  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 43 of 47  
+Last Rites Team  Version 1.5   are now embedded in a huge pillar and forced to tell the truth to all who petition them for 
+answers. There, after much bantering and threats with the skulls that swarm on the pillar, 
+the player learns:  
+ 
+ The location of his imprisoned mortality.  It lies on the Negative Material Plane (a 
+plane composed of the malignant energy that animates undead creatures) in an 
+impenetrable floating structure called the Fortress of Regrets.  
+ 
+ The name and location of his “murderer,” the  Transcendent One . The pillar tells 
+the player the Transcendent One can be found at the Fortress of Regrets.  
+ 
+ Everytime the player dies, he “casts a shadow on existence.”  The Pillar chuckles 
+and says that every time the player is “killed,” someone else in the multiverse dies in 
+the character‟s place. This victim becomes a vengeful shadow that is banished to the 
+Fortress of Regrets.  
+ 
+ A subtle, sarcastic warning of what awaits the player at the end of his journey.  
+ 
+ The name of the person who can tell the player  where the portal to the Fortress 
+of Regrets and the key to open the portal: Trias, the deva who sent the player to 
+the pillar in the first place.  The pillar tells the player Trias lied to him on purpose – 
+the player will have to find out why on his own.  
+ 
+After some trouble with the fiendish locals, the player escapes the plane and travels back 
+to Curst.  
+ 
+CARCERI: THE BANISHED TOWN  
+ 
+The player arrives back at the prison town of Curst…except it’s not there anymore.  
+After the player freed Trias and left the t own to go to the Pillar of Skulls, Trias caused the 
+entire town to “slide” into another plane (the prison plane of Carceri). The player is 
+forced to travel through a portal the town slid through and try and rescue it from its fate. 
+There, the player must:  
+ 
+ Track town the missing city of Curst in the harsh environment of Carceri.  
+ 
+ Protect Curst from Carceri‟s evil natives who are very happy for the fresh meat.  
+ 
+ Rescue the town by bringing it back to its proper plane. This will involve killing the 
+betrayers t hat started this whole sliding mess in the first place.11 
+ 
+While on this plane, the player tracks down Trias and learns the last bits of information to 
+complete the quest: the nature of the key needed to get to the final location of the game 
+                                                           
+11 The player must cause the banished town to slide back for his own sake…he cannot find any other portal on the plane that will  take 
+him back within the game.  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 44 of 47  
+Last Rites Team  Version 1.5   (The Fortress of Regrets ) and the location of the portal to the Fortress (the portal is 
+located in a small niche in the Mortuary).12 Trias will use the information as leverage 
+against the player character to try and save his life.  
+ 
+An awesome movie plays that shows the to wn sliding back into its proper plane, the 
+player, his arms outstretched as the wave of portal energy washes over him and the town 
+(think of Soren as he summons the Nexus in Star Trek: Generations) . 
+ 
+Once Curst is back on the Outlands, the player travels back to Sigil and return to the 
+Mortuary.  
+ 
+GRAND FINALE: FORTRESS OF REGRETS  
+ 
+The adventure comes full circle. The player returns to where he started the adventure: the 
+Mortuary. Now that he has the key, and player uses one of the Mortuary portals to travel  
+to the Fortress of Regrets . There, the player must:  
+ 
+ Battle:  Defeat the horde of vengeful shadows that lurk in the halls of the Fortress.  
+ 
+ Puzzles:  Survive three trials (impulse, illusion and spiritual illumination).  
+ 
+ Final Battle:  The player confronts his adversary, the Transcendent One, and 
+discovers the truth: his “adversary” is actually his missing mortality that has evolved 
+into its own personality. The Transcendent One‟s personality depends on the 
+character‟s actions over the course of Last Rites .13  
+ 
+Once the player learns the truth, he can:  
+ 
+ (“Bad” Ending) Walk away and don’t look back. The player does not have to 
+become mortal again if he doesn‟t want to (immortality, even with amnesia, has its 
+obvious benefits). The tone of this ending will leave something to be desired, but the 
+player may choose it if they wish. If the player chooses this ending, the game basically 
+begins again where it started, with the player awakening in the Mortuary without his 
+memory and a (saddened) Morte greeting him back to  life again.  
+ 
+ (“Not Quite so Good” Ending) Perform “Last Rites,” damning yourself but 
+saving all of existence by becoming mortal and letting death take its natural 
+course.  If the player can convince  his mortality to return to him (his mortality has no 
+desire to return to him – it doesn‟t like the player and enjoys its autonomy), the player 
+discovers why his mortality was separated from him in the first place…to avoid the 
+penance for a lifetime of evil.  
+ 
+                                                           
+12 The irony is that this is about five feet from where the player started the game.  
+13 Basically, if the player was an evil asshole, his adversary is supremely good and self -righteous. If the player acted li ke a goody two -
+shoes for the entire adventure, his adversary oozes with evil. If the player was neutral, his adversary is indifferent to his  fate. 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 45 of 47  
+Last Rites Team  Version 1.5    
+ (Best Ending) This is a game. I want to have my cake and eat it, too. The player 
+learns why his mortality was separated from him, but rather than becoming mortal, he 
+turns on it, kill ing it/trapping it and preventing it from interfering with his life 
+anymore (i.e., killing him). He then wanders the planes as a happy immortal.  
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 46 of 47  
+Last Rites Team  Version 1.5     
+ 
+PLANESCAPE CRPG  
+LAST RITES  
+GAMEPLAY ELEMENTS  
+7/12/07 8:25:39 PM  
+ 
+“Fire, Water, Earth, Air, Gameplay…”  
+- The five elements  - 
+ 
+ 
+THIS GAME DIFFERS FROM „NORMAL‟ AD&D  
+ 
+Last Rites takes some rule detours to breathe new life into the AD&D system for 
+experienced players and make it accessible for new players.  
+ 
+Some aspects of AD&D are intriguing…other portions have been done to death or bore 
+players to tears. Fortunately, the world of Planescape allows us to take the AD&D rules 
+system and play around with them, emphasizing some of the lesser known aspects of the 
+system and customizing others.  
+ 
+O  YOUR ACTIONS  DEFINE YOUR CHARACTER  
+ 
+Your actions  in the game are the character creation process.  
+ 
+The player is not locked into any one class right at the start. Rather than being 
+stamped with a label at the beginning (fighter, mage, thief, priest), your actions in 
+the game define your character.  
+ 
+In his past thousand or more incarnations, the player character has followed every 
+career path a player character can follow and maxed out all his characteristics. It‟s 
+just a matter of remembering it all. As the adventure progresses and he regains his 
+memories (or meets teachers), he will remember  skills, powers and regain 
+characteristics related to all the classes he was once a member of. This allows us 
+to give fringe benefits, perks, and special p owers outside of the AD&D normal 
+advancement scheme.  
+ 
+8:25 PM  07/12/07  Last Rites Product Review Packet  Page 47 of 47  
+Last Rites Team  Version 1.5   O  POWERS NO AD&D CHARACTER HAS EVER 
+HAD 
+ 
+The player starts out with powers no AD&D player character has ever had.  
+ 
+He‟s immortal. He‟s got magical immunities. He can speak with the dead. He can 
+regenerate. He can re -attach severed limbs. Despite his appearance, he has a raw, 
+unbridled animal magnetism that makes women swoon.  
+ 
+O  YOU DON‟T START OUT AT 1st LEVEL  
+ 
+The player spends the adventure remembering his true abilities.  
+ 
+The player starts out a s a blank slate (the equivalent of a third level character) 
+with tons of fringe benefits (mentioned above) and lots of hit points.  
+ 
+The player has been 25th level in all possible AD&D character classes in his 
+previous incarnations. He can remember abilities that pertain to all these classes 
+over the course of the adventure. He has the ability to cast spells beyond his 
+current level (such as Wish spells), use warrior proficiencies normally available 
+only at much higher levels and get various priest and thie f benefits much earlier 
+than normally allowed."
